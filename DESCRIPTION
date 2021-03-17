@@ -1,0 +1,13 @@
+Package: dscoredata
+Type: Package
+Title: D-score Public Data
+Version: 0.1.0
+Authors@R: c(
+    person("Stef", "van Buuren", email = "stef.vanbuuren@tno.nl", role = c("cre", "aut")),
+    person("Iris", "Eekhout", email = "iris.eekhout@tno.nl", role = "aut"),
+    person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"))
+Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
+Description: This package bundles publicly available datasets for the D-score.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
