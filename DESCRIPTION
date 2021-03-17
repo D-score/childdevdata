@@ -1,13 +1,15 @@
-Package: dscoredata
+Package: childdevdata
 Type: Package
-Title: D-score Public Data
+Title: Child Development Public Data
 Version: 0.1.0
 Authors@R: c(
     person("Stef", "van Buuren", email = "stef.vanbuuren@tno.nl", role = c("cre", "aut")),
     person("Iris", "Eekhout", email = "iris.eekhout@tno.nl", role = "aut"),
     person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
-Description: This package bundles publicly available datasets for the D-score.
+Description: Measuring child development involves the evaluation of a child 
+    relative to one or more developmental items. This package bundles 
+    publicly available datasets with individual child development data.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
