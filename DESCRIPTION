@@ -7,9 +7,15 @@ Authors@R: c(
     person("Iris", "Eekhout", email = "iris.eekhout@tno.nl", role = "aut"),
     person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
-Description: Measuring child development involves the evaluation of a child 
-    relative to one or more developmental items. This package bundles 
-    publicly available datasets with individual child development data.
+Description: The childdevdata package bundles publicly available datasets with 
+    individual milestone data for children aged 0-5 years. Measuring child 
+    development starts by collecting responses to developmental milestones,
+    such as "able to sit" or "says two words". There are many ways to combine 
+    such responses into summaries. This package aims to support the construction, 
+    evaluation, validation and interpretation of methodologies that aggregate 
+    milestone data into informative measures of child development.
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
