@@ -3,7 +3,7 @@
 \docType{data}
 \name{gcdg_col_lt45m}
 \alias{gcdg_col_lt45m}
-\title{Colombia, 0.8-3.7 years: \code{gcdg_col_lt45m}}
+\title{Colombia two waves, 0.8-3.7 years: \code{gcdg_col_lt45m}}
 \format{
 A \code{data.frame} with 1335 rows and 269 variables:\tabular{lll}{
    Name \tab Type \tab Label \cr
