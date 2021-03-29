@@ -1,4 +1,4 @@
-#' Colombia Bogota data, 0.5-3.5 years: `gcdg_col_lt42m`
+#' Colombia, 0.5-3.5 years: `gcdg_col_lt42m`
 #'
 #' A dataset with developmental scores at the item level for
 #' 1311 children measured at ages 0.5-3.5 year.
@@ -649,11 +649,10 @@
 #' PloS one. 2020;15:e0231317.
 #' \url{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0231317}
 #'
-#' Attanasio OP, Fernández C, Fitzsimons EOA, Grantham-McGregor SM, Meghir C,
-#' Rubio-Codina M. Using the infrastructure of a conditional cash transfer
-#' program to deliver a scalable integrated early child development program in
-#' Colombia: cluster randomized controlled trial. BMJ. 2014;349.
-#' \url{https://www.bmj.com/content/349/bmj.g5785}
+#' Rubio-Codina M, Araujo MC, Attanasio O, Muñoz P, Grantham-McGregor S.
+#' Concurrent validity and feasibility of short tests currently used to measure
+#' early childhood development in large scale studies. PLoS One. 2016;11:e0160962.
+#' \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4993374/}
 #' @examples
 #' head(gcdg_col_lt42m)
 "gcdg_col_lt42m"
