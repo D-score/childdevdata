@@ -11,6 +11,8 @@ Authors@R: c(
     person("Emla", "Fitzsimons", email = "e.fitzsimons@ucl.ac.uk", role = "ctb"),
     person("Sally", "Grantham-McGregor", email = "sallymcgregor@yahoo.com", role = "ctb"),
     person("Maria Caridad", "Araujo", email = "mcaraujo@iadb.org", role = "ctb"),
+    person("Susan", "Walker", email = "susan.walker@uwimona.edu.jm", role = "ctb"),
+    person("Susan", "Chang", role = "ctb"),
     person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "ctb"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
 Description: The childdevdata package bundles publicly available datasets with 
