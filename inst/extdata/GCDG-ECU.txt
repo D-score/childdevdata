@@ -1,0 +1,668 @@
+ctrycd	cohort	cohortn	subjid	agedays	sex	gagebrth	barxxx001	barxxx002	barxxx003	barxxx004	barxxx005	barxxx006	barxxx007	barxxx008	barxxx009	barxxx010	barxxx011	barxxx012	barxxx013	barxxx014	barxxx015	barxxx016	barxxx017	barxxx018	barxxx019	barxxx020	barxxx021	barxxx022
+ECU	GCDG-ECU	42	4200001	304	Female								1	1	1	1	0	0										
+ECU	GCDG-ECU	42	4200002	91	Male		1	0	1	0																		
+ECU	GCDG-ECU	42	4200003	883	Male														1	0	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200004	426	Male											0	0	0	1									
+ECU	GCDG-ECU	42	4200005	822	Female																1	1	1	0	1			
+ECU	GCDG-ECU	42	4200006	183	Female						0	1	0	1														
+ECU	GCDG-ECU	42	4200007	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200008	852	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200009	365	Male											0	1	0	0									
+ECU	GCDG-ECU	42	4200010	730	Male												1	1	0	1	0	0						
+ECU	GCDG-ECU	42	4200011	1004	Female																	0	1	0	0	0	0	0
+ECU	GCDG-ECU	42	4200012	974	Male																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200013	304	Male								1	1														
+ECU	GCDG-ECU	42	4200014	700	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200015	1035	Female																	1	1	0	0	1	0	0
+ECU	GCDG-ECU	42	4200016	944	Male																	1		0	0		0	0
+ECU	GCDG-ECU	42	4200017	700	Male												0	0	1	1	0	0						
+ECU	GCDG-ECU	42	4200018	974	Male																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200019	1035	Male																			0	1		0	0
+ECU	GCDG-ECU	42	4200020	761	Male														1	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200021	944	Male																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200022	244	Male						1	0	0	1	0	0	0											
+ECU	GCDG-ECU	42	4200023	761	Female														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200024	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200025	791	Female														0	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200026	883	Male														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200027	761	Male														0	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200028	670	Female												1	1			0							
+ECU	GCDG-ECU	42	4200029	1035	Male																			0	0		0	0
+ECU	GCDG-ECU	42	4200030	609	Female												0	1	0	1	1	0						
+ECU	GCDG-ECU	42	4200031	670	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200032	213	Male						1	0	0	1	0	0												
+ECU	GCDG-ECU	42	4200033	457	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200034	548	Male											0	1	1	0									
+ECU	GCDG-ECU	42	4200035	761	Male														1	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200036	1035	Female																	1	0	1	0	1	0	0
+ECU	GCDG-ECU	42	4200037	791	Female														1	1	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200038	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200039	426	Female											1	1	0	1									
+ECU	GCDG-ECU	42	4200040	761	Female														0	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200041	487	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200042	578	Female												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200043	1035	Female																	1	0	0	0	1	0	
+ECU	GCDG-ECU	42	4200044	517	Male											0	0	0	0									
+ECU	GCDG-ECU	42	4200045	791	Male														1	1	0		0	0	0			
+ECU	GCDG-ECU	42	4200046	822	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200047	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200048	1035	Female																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200049	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200050	396	Female										1	1	1	1	0									
+ECU	GCDG-ECU	42	4200051	0	Male		0	0																				
+ECU	GCDG-ECU	42	4200052	974	Female																	1	1	0	0	0	0	0
+ECU	GCDG-ECU	42	4200053	213	Female						0	0	0	1	0	0												
+ECU	GCDG-ECU	42	4200054	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200055	517	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200056	91	Male		0	0	1	0																		
+ECU	GCDG-ECU	42	4200057	670	Female												1	1	1	0	0	1						
+ECU	GCDG-ECU	42	4200058	396	Female											0	1	1	0									
+ECU	GCDG-ECU	42	4200059	791	Female														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200060	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200061	670	Female												1	1	1	0	1	1						
+ECU	GCDG-ECU	42	4200062	974	Female																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200063	274	Male							0	0	1	0	0	0											
+ECU	GCDG-ECU	42	4200064	578	Female												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200065	822	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200066	761	Female														1	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200067	639	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200068	944	Male																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200069	670	Female												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200070	670	Female												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200071	487	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200072	61	Female		0	0	1																			
+ECU	GCDG-ECU	42	4200073	517	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200074	822	Male														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200075	883	Male														1	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200076	517	Male											0	0	0	0									
+ECU	GCDG-ECU	42	4200077	791	Male														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200078	1004	Male																	1	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200079	761	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200080	548	Male											0	1	1	0									
+ECU	GCDG-ECU	42	4200081	944	Female																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200082	913	Male														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200083	335	Female										1	0	0	0										
+ECU	GCDG-ECU	42	4200084	791	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200085	152	Male				1	1	1	0																
+ECU	GCDG-ECU	42	4200086	1065	Female																	1	1	0	0	1	0	0
+ECU	GCDG-ECU	42	4200087	1065	Male																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200088	730	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200089	304	Male								0	1	0	0	0	0										
+ECU	GCDG-ECU	42	4200090	213	Female						1	0	0	1	0	0												
+ECU	GCDG-ECU	42	4200091	852	Female														1	0	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200092	730	Female												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200093	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200094	122	Male			1	1	1	0																	
+ECU	GCDG-ECU	42	4200095	822	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200096	0	Female		1	0																				
+ECU	GCDG-ECU	42	4200097	1065	Male																	1	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200098	670	Male												1	1	1	0	1	0						
+ECU	GCDG-ECU	42	4200099	457	Female											0	0	0	1									
+ECU	GCDG-ECU	42	4200100	304	Male								1	1	1	0	0	0										
+ECU	GCDG-ECU	42	4200101	609	Female												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200102	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200103	457	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200104	365	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200105	517	Female											0	1	1	1									
+ECU	GCDG-ECU	42	4200106	791	Female														1	1	1	1	1	0	0			
+ECU	GCDG-ECU	42	4200107	730	Female												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200108	1035	Male																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200109	883	Female														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200110	91	Female		0	1	0	0																		
+ECU	GCDG-ECU	42	4200111	639	Female												1	1	1	1	0	1				0	0	
+ECU	GCDG-ECU	42	4200112	274	Male							1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200113	183	Female					1	0	0	0	1														
+ECU	GCDG-ECU	42	4200114	822	Male														1	1	1		1	0	1			
+ECU	GCDG-ECU	42	4200115	91	Male		1	1	1	0																		
+ECU	GCDG-ECU	42	4200116	61	Male		1	1	1																			
+ECU	GCDG-ECU	42	4200117	487	Female											1	1	1										
+ECU	GCDG-ECU	42	4200118	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200119	700	Male												1	1	1									
+ECU	GCDG-ECU	42	4200120	122	Female			1																				
+ECU	GCDG-ECU	42	4200121	700	Male												1	1	1	0	0							
+ECU	GCDG-ECU	42	4200122	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200123	548	Female											1	0	0	1									
+ECU	GCDG-ECU	42	4200124	30	Female		0	0																				
+ECU	GCDG-ECU	42	4200125	335	Female									1	0	1	0	0										
+ECU	GCDG-ECU	42	4200126	1035	Female																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200127	61	Female		0	0	1																			
+ECU	GCDG-ECU	42	4200128	517	Female											1	1	0	1									
+ECU	GCDG-ECU	42	4200129	609	Male												1	1	1	1	1	1	0	0	0		0	0
+ECU	GCDG-ECU	42	4200130	944	Male																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200131	822	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200132	122	Male			1	1	1	0																	
+ECU	GCDG-ECU	42	4200133	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200134	457	Female											0	0	0	1									
+ECU	GCDG-ECU	42	4200135	852	Male														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200136	274	Female							1	1	1	0	0	0											
+ECU	GCDG-ECU	42	4200137	700	Female												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200138	1004	Male																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200139	761	Male														1	1	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200140	335	Female									1	1	0	0	0										
+ECU	GCDG-ECU	42	4200141	183	Female					1	1	0	0	1														
+ECU	GCDG-ECU	42	4200142	517	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200143	822	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200144	30	Male		1	1																				
+ECU	GCDG-ECU	42	4200145	91	Female		1	1	1	0																		
+ECU	GCDG-ECU	42	4200146	213	Female						1	0	0	1	1	0												
+ECU	GCDG-ECU	42	4200147	791	Male														1	1	0	1	0	1	1			
+ECU	GCDG-ECU	42	4200148	944	Female																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200149	852	Male														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200150	213	Male						1	1	1	1		0												
+ECU	GCDG-ECU	42	4200151	122	Male			1																				
+ECU	GCDG-ECU	42	4200152	913	Female														1	1	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200153	1035	Male																	1	1	1	0	1	0	0
+ECU	GCDG-ECU	42	4200154	426	Female											0	0	0	1									
+ECU	GCDG-ECU	42	4200155	700	Female												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200156	670	Female												0	0	0	0	0	0						
+ECU	GCDG-ECU	42	4200157	639	Female												0	0	0	0	0	0						
+ECU	GCDG-ECU	42	4200158	1065	Male																	0	1	0	1	0	0	0
+ECU	GCDG-ECU	42	4200159	730	Male												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200160	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200161	1004	Female														0	1	1	0	1	0	1			
+ECU	GCDG-ECU	42	4200162	791	Female														0	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200163	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200164	639	Female												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200165	213	Male						1	1	0	1	1	0												
+ECU	GCDG-ECU	42	4200166	396	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200167	274	Female							1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200168	426	Male											0	0	0	0									
+ECU	GCDG-ECU	42	4200169	122	Female			1	1	1	0																	
+ECU	GCDG-ECU	42	4200170	487	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200171	700	Male												1	1	1	0	0	1						
+ECU	GCDG-ECU	42	4200172	1035	Male																	1	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200173	944	Male																	0	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200174	761	Female														1	1	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200175	335	Female									1	0	0	0	0										
+ECU	GCDG-ECU	42	4200176	578	Female												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200177	548	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200178	244	Male						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200179	852	Male														0	0	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200180	487	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200181	913	Male														0	0	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200182	730	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200183	822	Female														1	0	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200184	152	Female				1	1	1	0																
+ECU	GCDG-ECU	42	4200185	852	Female														1	1	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200186	670	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200187	61	Female		0	0	1																			
+ECU	GCDG-ECU	42	4200188	730	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200189	670	Female												1	1	0	1	0	0						
+ECU	GCDG-ECU	42	4200190	670	Female												1	1	1	0	0	1						
+ECU	GCDG-ECU	42	4200191	670	Male												1	1	1	0	0	1						
+ECU	GCDG-ECU	42	4200192	426	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200193	1065	Female																	0	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200194	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200195	487	Male											0	0	0	1									
+ECU	GCDG-ECU	42	4200196	974	Female																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200197	852	Female														1	1	0	1	0	0	1			
+ECU	GCDG-ECU	42	4200198	244	Female						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200199	822	Female														1	0	1	0	0	1	0			
+ECU	GCDG-ECU	42	4200200	335	Female									1	1	0	0	0										
+ECU	GCDG-ECU	42	4200201	1004	Male																	0	0	1	1	1	0	0
+ECU	GCDG-ECU	42	4200202	761	Female														1	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200203	1004	Male																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200204	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200205	335	Female									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200206	396	Male											0	0	1	1									
+ECU	GCDG-ECU	42	4200207	457	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200208	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200209	791	Male														1	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200210	487	Female											0	1	0	1									
+ECU	GCDG-ECU	42	4200211	852	Male														1	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200212	274	Male							1	0	1	1	0	0											
+ECU	GCDG-ECU	42	4200213	91	Male		0	1	1	0																		
+ECU	GCDG-ECU	42	4200214	913	Male														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200215	274	Female							1	1	1	0	0	0											
+ECU	GCDG-ECU	42	4200216	761	Female														1	1	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200217	244	Female						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200218	1004	Male																	1	1	1	1	1	1	1
+ECU	GCDG-ECU	42	4200219	183	Male					1	1	1	1	1														
+ECU	GCDG-ECU	42	4200220	822	Male														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200221	1004	Male																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200222	1035	Female																	1	0	0	1	0	0	0
+ECU	GCDG-ECU	42	4200223	670	Female												0	0	0	0	0	0						
+ECU	GCDG-ECU	42	4200224	639	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200225	822	Female														1	0	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200226	1035	Female																	1	0	0	0	0	0	1
+ECU	GCDG-ECU	42	4200227	365	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200228	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200229	609	Male												1	1	1	0	1	1						
+ECU	GCDG-ECU	42	4200230	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200231	852	Female														1	0	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200232	61	Male		1	1																				
+ECU	GCDG-ECU	42	4200233	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200234	730	Male												1	1	1	1	1							
+ECU	GCDG-ECU	42	4200235	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200236	396	Female											1	1	1										
+ECU	GCDG-ECU	42	4200237	852	Male														1	1	1	1	1	0	0			
+ECU	GCDG-ECU	42	4200238	761	Female														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200239	913	Female														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200240	944	Male																	1	0	1	1	1	0	0
+ECU	GCDG-ECU	42	4200241	335	Female									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200242	487	Male											1	1	0										
+ECU	GCDG-ECU	42	4200243	761	Female															1								
+ECU	GCDG-ECU	42	4200244	639	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200245	487	Female											1												
+ECU	GCDG-ECU	42	4200246	883	Male														1	1		1	0	0	0			
+ECU	GCDG-ECU	42	4200247	91	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200248	517	Male											1	1	1										
+ECU	GCDG-ECU	42	4200249	944	Female																	1						
+ECU	GCDG-ECU	42	4200250	152	Female				1	1	1	0																
+ECU	GCDG-ECU	42	4200251	944	Female																		0	0			0	0
+ECU	GCDG-ECU	42	4200252	274	Female							1		0														
+ECU	GCDG-ECU	42	4200253	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200254	426	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200255	822	Male															1			0	0				
+ECU	GCDG-ECU	42	4200256	457	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200257	122	Male			1	1	1	1																	
+ECU	GCDG-ECU	42	4200258	487	Female											1	1	1										
+ECU	GCDG-ECU	42	4200259	335	Male									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200260	791	Male														0	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200261	487	Female											1	0	0	0									
+ECU	GCDG-ECU	42	4200262	1065	Female																							0
+ECU	GCDG-ECU	42	4200263	396	Female											1	0	1	0									
+ECU	GCDG-ECU	42	4200264	822	Male																0				0			
+ECU	GCDG-ECU	42	4200265	244	Female						1	1	1	0	1	0	0											
+ECU	GCDG-ECU	42	4200266	883	Male														0	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200267	609	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200268	61	Male		0	0	0																			
+ECU	GCDG-ECU	42	4200269	761	Female														0	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200270	974	Male																	0	0	1	0	0	0	0
+ECU	GCDG-ECU	42	4200271	700	Male												1	1	0	0	1	0						
+ECU	GCDG-ECU	42	4200272	152	Female				0	1	0	0																
+ECU	GCDG-ECU	42	4200273	913	Male														0	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200274	944	Female																	0	1	0	0	0	0	0
+ECU	GCDG-ECU	42	4200275	365	Female											0	1	0	0									
+ECU	GCDG-ECU	42	4200276	639	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200277	578	Male												1	1		1	1							
+ECU	GCDG-ECU	42	4200278	1035	Female																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200279	244	Male						1	1		0	1	0	0											
+ECU	GCDG-ECU	42	4200280	487	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200281	487	Male											1	1	1										
+ECU	GCDG-ECU	42	4200282	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200283	61	Male		1	1	1																			
+ECU	GCDG-ECU	42	4200284	61	Female		1	1																				
+ECU	GCDG-ECU	42	4200285	30	Female			0																				
+ECU	GCDG-ECU	42	4200286	0	Female		0	0																				
+ECU	GCDG-ECU	42	4200287	578	Female												1	1	0	1	0	0						
+ECU	GCDG-ECU	42	4200288	30	Male		1	1																				
+ECU	GCDG-ECU	42	4200289	791	Male														1	1	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200290	30	Male		1	1																				
+ECU	GCDG-ECU	42	4200291	761	Female																1				1			
+ECU	GCDG-ECU	42	4200292	730	Male												1	1	1		0	1						
+ECU	GCDG-ECU	42	4200293	670	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200294	122	Female			1	1	1	0																	
+ECU	GCDG-ECU	42	4200295	517	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200296	913	Female														1	1	1	1	1	1	0			
+ECU	GCDG-ECU	42	4200297	1004	Female																			0	1		0	0
+ECU	GCDG-ECU	42	4200298	213	Male						1			1	1													
+ECU	GCDG-ECU	42	4200299	426	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200300	1065	Male																	1	0	1	1	1	0	0
+ECU	GCDG-ECU	42	4200301	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200302	91	Male			0	1	1	0																	
+ECU	GCDG-ECU	42	4200303	700	Male												1	1	1	1	1							
+ECU	GCDG-ECU	42	4200304	1035	Male																	1	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200305	183	Male					1	0	0	0	1														
+ECU	GCDG-ECU	42	4200306	426	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200307	974	Female																	1	1	0	1	1	0	0
+ECU	GCDG-ECU	42	4200308	30	Female		1	1																				
+ECU	GCDG-ECU	42	4200309	426	Male											1	1	1										
+ECU	GCDG-ECU	42	4200310	457	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200311	883	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200312	152	Female			1	1	1	1																	
+ECU	GCDG-ECU	42	4200313	335	Male									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200314	883	Female														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200315	213	Female						1	1	1	1	1	0												
+ECU	GCDG-ECU	42	4200316	122	Female			1	1	1	1																	
+ECU	GCDG-ECU	42	4200317	517	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200318	883	Male														1	1	0	1	1	0	0			
+ECU	GCDG-ECU	42	4200319	730	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200320	152	Female				1	1	1	1																
+ECU	GCDG-ECU	42	4200321	1004	Male																	1	1	0	0	1	0	0
+ECU	GCDG-ECU	42	4200322	578	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200323	639	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200324	822	Male														1	1	1	1	1	0	1			
+ECU	GCDG-ECU	42	4200325	730	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200326	852	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200327	761	Male														1	1	1	1	0		0			
+ECU	GCDG-ECU	42	4200328	822	Female														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200329	0	Female		0	0																				
+ECU	GCDG-ECU	42	4200330	274	Male							1	0	0	0	0	0											
+ECU	GCDG-ECU	42	4200331	913	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200332	944	Female																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200333	213	Male						0	1	0	0	0	0												
+ECU	GCDG-ECU	42	4200334	487	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200335	517	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200336	913	Male																			0	0			
+ECU	GCDG-ECU	42	4200337	152	Male				1	1	1	1																
+ECU	GCDG-ECU	42	4200338	883	Female															1	0	1	0	1	1			
+ECU	GCDG-ECU	42	4200339	335	Female									1	1	1	0	0										
+ECU	GCDG-ECU	42	4200340	335	Female									1	1	1												
+ECU	GCDG-ECU	42	4200341	974	Male																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200342	274	Female							1	1	1	1	1	1											
+ECU	GCDG-ECU	42	4200343	700	Female														1	1	1	1	0	0				
+ECU	GCDG-ECU	42	4200344	639	Female																			0	0			
+ECU	GCDG-ECU	42	4200345	974	Male																	1	1	1	1	1	1	0
+ECU	GCDG-ECU	42	4200346	974	Male																		1	1	1		0	0
+ECU	GCDG-ECU	42	4200347	396	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200348	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200349	974	Female																		0	0	0		0	0
+ECU	GCDG-ECU	42	4200350	304	Male								1	1	1	1	0	0										
+ECU	GCDG-ECU	42	4200351	152	Male				1	1	1	1																
+ECU	GCDG-ECU	42	4200352	183	Female					1	1	1	0	1														
+ECU	GCDG-ECU	42	4200353	30	Female		1	1																				
+ECU	GCDG-ECU	42	4200354	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200355	426	Male											1	1	0	1									
+ECU	GCDG-ECU	42	4200356	457	Male											1	1	0	1									
+ECU	GCDG-ECU	42	4200357	700	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200358	274	Male							1	1	1	1	1	0											
+ECU	GCDG-ECU	42	4200359	578	Female												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200360	852	Female														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200361	274	Male							1	1	1	1	1	0											
+ECU	GCDG-ECU	42	4200362	457	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200363	761	Male															1	1	1	0	0	1			
+ECU	GCDG-ECU	42	4200364	152	Male				1	1	1	1																
+ECU	GCDG-ECU	42	4200365	578	Male												1	1	1	0	1	0						
+ECU	GCDG-ECU	42	4200366	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200367	913	Female														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200368	457	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200369	91	Male		1	1	1	1																		
+ECU	GCDG-ECU	42	4200370	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200371	457	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200372	944	Male																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200373	730	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200374	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200375	822	Male														1	1	1		0	0	1			
+ECU	GCDG-ECU	42	4200376	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200377	487	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200378	700	Female												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200379	122	Male			1	1	1	1																	
+ECU	GCDG-ECU	42	4200380	852	Female														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200381	365	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200382	578	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200383	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200384	822	Male															1								
+ECU	GCDG-ECU	42	4200385	974	Female																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200386	761	Female														0	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200387	761	Male														0	0	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200388	609	Female												1	1	0	0	1	0						
+ECU	GCDG-ECU	42	4200389	1065	Female																		1	0	0		0	0
+ECU	GCDG-ECU	42	4200390	0	Female		1	1																				
+ECU	GCDG-ECU	42	4200391	639	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200392	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200393	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200394	426	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200395	30	Male		0																					
+ECU	GCDG-ECU	42	4200396	639	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200397	700	Female																1							
+ECU	GCDG-ECU	42	4200398	335	Female									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200399	304	Female								1	1	1	1	0	0										
+ECU	GCDG-ECU	42	4200400	426	Male											1	1	1	0	1								
+ECU	GCDG-ECU	42	4200401	426	Female											1	1	0	1									
+ECU	GCDG-ECU	42	4200402	152	Male				1	1	1	0																
+ECU	GCDG-ECU	42	4200403	1035	Male																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200404	822	Female														1	0	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200405	1035	Female																	1	0	1	0	1	0	0
+ECU	GCDG-ECU	42	4200406	122	Female			1	0	1	0																	
+ECU	GCDG-ECU	42	4200407	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200408	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200409	974	Male																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200410	639	Male												1	1	1	0	0	1						
+ECU	GCDG-ECU	42	4200411	700	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200412	365	Female											0	0	0	0									
+ECU	GCDG-ECU	42	4200413	183	Male					1	1	1	0	1														
+ECU	GCDG-ECU	42	4200414	700	Male												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200415	122	Male			1	1	1	1																	
+ECU	GCDG-ECU	42	4200416	639	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200417	700	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200418	761	Female														1	1	0	1	0	0	0			
+ECU	GCDG-ECU	42	4200419	944	Female																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200420	152	Female				1	1	1	0																
+ECU	GCDG-ECU	42	4200421	883	Female														1	1	1	0	0	1	0			
+ECU	GCDG-ECU	42	4200422	213	Female						1	1	1	1	0	0												
+ECU	GCDG-ECU	42	4200423	700	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200424	1065	Male																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200425	152	Male				1	1	1	0																
+ECU	GCDG-ECU	42	4200426	791	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200427	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200428	517	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200429	670	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200430	883	Female														1	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200431	365	Male											0	1	0	0									
+ECU	GCDG-ECU	42	4200432	913	Female														1	0	0	1	0		0			
+ECU	GCDG-ECU	42	4200433	213	Female						0	1	0	0	1	0												
+ECU	GCDG-ECU	42	4200434	730	Male														1	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200435	548	Male											1	1	0	1									
+ECU	GCDG-ECU	42	4200436	639	Female												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200437	913	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200438	335	Female									1	0	0	0	0										
+ECU	GCDG-ECU	42	4200439	700	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200440	244	Female						0	1	0	1	1	0	1											
+ECU	GCDG-ECU	42	4200441	0	Female		1	1																				
+ECU	GCDG-ECU	42	4200442	213	Female						1	0	0	0	0	0												
+ECU	GCDG-ECU	42	4200443	213	Female						0	1	0	1	0	0												
+ECU	GCDG-ECU	42	4200444	883	Male														1	1	1	0	0	0	0	0		
+ECU	GCDG-ECU	42	4200445	426	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200446	670	Female												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200447	457	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200448	730	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200449	700	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200450	883	Male														1	1	1	1	1	1	0			
+ECU	GCDG-ECU	42	4200451	152	Male				1	1	0	1																
+ECU	GCDG-ECU	42	4200452	1004	Male																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200453	426	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200454	91	Male		1	1	0	0																		
+ECU	GCDG-ECU	42	4200455	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200456	578	Male												1	1	1									
+ECU	GCDG-ECU	42	4200457	944	Female																			0			0	0
+ECU	GCDG-ECU	42	4200458	335	Female										1	1	1	1										
+ECU	GCDG-ECU	42	4200459	396	Female											1	1	1										
+ECU	GCDG-ECU	42	4200460	457	Male											1	1	1										
+ECU	GCDG-ECU	42	4200461	30	Male		1	1																				
+ECU	GCDG-ECU	42	4200462	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200463	244	Female						1																	
+ECU	GCDG-ECU	42	4200464	365	Female											1	1	1										
+ECU	GCDG-ECU	42	4200465	396	Male											1	1	1										
+ECU	GCDG-ECU	42	4200466	91	Female		1	1	1	1																		
+ECU	GCDG-ECU	42	4200467	578	Male												1	1		1	1							
+ECU	GCDG-ECU	42	4200468	122	Female			1	1	1	1																	
+ECU	GCDG-ECU	42	4200469	457	Male											1	1	1										
+ECU	GCDG-ECU	42	4200470	487	Female											0		0										
+ECU	GCDG-ECU	42	4200471	913	Male														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200472	487	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200473	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200474	974	Female																			1			0	0
+ECU	GCDG-ECU	42	4200475	213	Female								0	1	1													
+ECU	GCDG-ECU	42	4200476	426	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200477	61	Male			1																				
+ECU	GCDG-ECU	42	4200478	426	Male											1	1											
+ECU	GCDG-ECU	42	4200479	822	Male														1	1	1							
+ECU	GCDG-ECU	42	4200480	517	Male											1	1	1										
+ECU	GCDG-ECU	42	4200481	152	Female				1																			
+ECU	GCDG-ECU	42	4200482	213	Male										1													
+ECU	GCDG-ECU	42	4200483	730	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200484	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200485	183	Female									0														
+ECU	GCDG-ECU	42	4200486	304	Male									1	1		1											
+ECU	GCDG-ECU	42	4200487	944	Female																			0			0	
+ECU	GCDG-ECU	42	4200488	578	Male												1	1		0								
+ECU	GCDG-ECU	42	4200489	457	Male											1	1	1										
+ECU	GCDG-ECU	42	4200490	609	Female												1	1										
+ECU	GCDG-ECU	42	4200491	61	Female		1		1																			
+ECU	GCDG-ECU	42	4200492	548	Female											1	1	1										
+ECU	GCDG-ECU	42	4200493	183	Female					1																		
+ECU	GCDG-ECU	42	4200494	974	Female																		0					
+ECU	GCDG-ECU	42	4200495	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200496	639	Male												1	1		1								
+ECU	GCDG-ECU	42	4200497	700	Male												1	1		1								
+ECU	GCDG-ECU	42	4200498	578	Female												1	1		1								
+ECU	GCDG-ECU	42	4200499	365	Female												0											
+ECU	GCDG-ECU	42	4200500	639	Female												1	1		1	1							
+ECU	GCDG-ECU	42	4200501	974	Male																			0			0	0
+ECU	GCDG-ECU	42	4200502	670	Male												1	1		1								
+ECU	GCDG-ECU	42	4200503	791	Male															1	1		0					
+ECU	GCDG-ECU	42	4200504	274	Female							1		0	1		1											
+ECU	GCDG-ECU	42	4200505	761	Male																		0		0			
+ECU	GCDG-ECU	42	4200506	1004	Male																	1	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200507	609	Male												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200508	700	Male												1	1										
+ECU	GCDG-ECU	42	4200509	670	Male												1	1	1	1								
+ECU	GCDG-ECU	42	4200510	974	Female																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200511	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200512	61	Male		1	1	1																			
+ECU	GCDG-ECU	42	4200513	852	Female														1	1	1	1	0	1	0			
+ECU	GCDG-ECU	42	4200514	244	Male						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200515	670	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200516	609	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200517	852	Male														1				1					
+ECU	GCDG-ECU	42	4200518	152	Female				1	0	1	1																
+ECU	GCDG-ECU	42	4200519	1035	Female																	1	0	1	0	0	0	0
+ECU	GCDG-ECU	42	4200520	457	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200521	30	Female		1	1																				
+ECU	GCDG-ECU	42	4200522	244	Female						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200523	609	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200524	1004	Male																	1	1	0	0	1	0	0
+ECU	GCDG-ECU	42	4200525	1035	Male																	1	0	1	1	0	0	0
+ECU	GCDG-ECU	42	4200526	183	Female				1	1	1	1	1	1														
+ECU	GCDG-ECU	42	4200527	944	Female																	1	1	0	1	1	0	0
+ECU	GCDG-ECU	42	4200528	883	Male														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200529	1035	Female																	1	1	0	1	1	0	0
+ECU	GCDG-ECU	42	4200530	396	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200531	1004	Female																	1	0	1	0	1	0	0
+ECU	GCDG-ECU	42	4200532	944	Female																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200533	913	Male														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200534	822	Male														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200535	183	Male					1	1	1	0	1														
+ECU	GCDG-ECU	42	4200536	791	Female														1	1	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200537	639	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200538	791	Female														1	0	1	0	0	0	1			
+ECU	GCDG-ECU	42	4200539	609	Female												1	1	1	0	1	0						
+ECU	GCDG-ECU	42	4200540	457	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200541	183	Male				1	1	1	1	1	1														
+ECU	GCDG-ECU	42	4200542	670	Male												1	1			0							
+ECU	GCDG-ECU	42	4200543	274	Male							1	1	1	1	1	0											
+ECU	GCDG-ECU	42	4200544	426	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200545	730	Male																1		0	0	0			
+ECU	GCDG-ECU	42	4200546	304	Female									1	1	1	1	1										
+ECU	GCDG-ECU	42	4200547	1004	Female																	1	0	0	1	0	0	0
+ECU	GCDG-ECU	42	4200548	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200549	944	Female																	1	0	1	1	1	0	0
+ECU	GCDG-ECU	42	4200550	365	Male												1	1	1									
+ECU	GCDG-ECU	42	4200551	883	Male														1	0	0	1	0	0	1			
+ECU	GCDG-ECU	42	4200552	639	Male												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200553	1065	Male																		0	1	0		0	0
+ECU	GCDG-ECU	42	4200554	730	Male												1	1		1								
+ECU	GCDG-ECU	42	4200555	365	Female											0	0	0	0	0								
+ECU	GCDG-ECU	42	4200556	609	Male												1	1	1	0	0	0						
+ECU	GCDG-ECU	42	4200557	578	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200558	883	Male														1	0	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200559	304	Female								1	0	1	1	0	0										
+ECU	GCDG-ECU	42	4200560	1004	Male														1	0	0	0	0	0	0			
+ECU	GCDG-ECU	42	4200561	700	Female												0	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200562	1035	Female																	0	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200563	487	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200564	1065	Male																	0	1	0	0	0	0	1
+ECU	GCDG-ECU	42	4200565	304	Male								1	1		0	0	0										
+ECU	GCDG-ECU	42	4200566	822	Female														0	1	1	0	0	1	0			
+ECU	GCDG-ECU	42	4200567	335	Male									0														
+ECU	GCDG-ECU	42	4200568	335	Male								1	1	1	0	0	0										
+ECU	GCDG-ECU	42	4200569	944	Male																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200570	304	Female								0	1	0	0	0	0										
+ECU	GCDG-ECU	42	4200571	944	Female																	1	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200572	1035	Female																		0	0	0		0	0
+ECU	GCDG-ECU	42	4200573	609	Male												1	1										
+ECU	GCDG-ECU	42	4200574	670	Female												1	1	0	0	0	0						
+ECU	GCDG-ECU	42	4200575	0	Male		0	0																				
+ECU	GCDG-ECU	42	4200576	791	Female														1	1								
+ECU	GCDG-ECU	42	4200577	822	Male														0	1	1	0	0	1	0			
+ECU	GCDG-ECU	42	4200578	487	Female											1	1	1										
+ECU	GCDG-ECU	42	4200579	396	Male											0	0	0	0									
+ECU	GCDG-ECU	42	4200580	761	Female														0	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200581	974	Male																	0	0	0	1	1	0	0
+ECU	GCDG-ECU	42	4200582	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200583	913	Female														1	1	1			1	1			
+ECU	GCDG-ECU	42	4200584	457	Male											0	0	0	0									
+ECU	GCDG-ECU	42	4200585	944	Female																		1	0	1		0	0
+ECU	GCDG-ECU	42	4200586	122	Female			1	1	1	1																	
+ECU	GCDG-ECU	42	4200587	1065	Male																		0	1	0		0	0
+ECU	GCDG-ECU	42	4200588	244	Male						1	1		1	0	0												
+ECU	GCDG-ECU	42	4200589	396	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200590	396	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200591	730	Male												1	1	1									
+ECU	GCDG-ECU	42	4200592	244	Male						1	1	1	1	1	0	0											
+ECU	GCDG-ECU	42	4200593	944	Male																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200594	304	Female								0	1	1	0	0	0										
+ECU	GCDG-ECU	42	4200595	883	Female														1	1	0	0	0	0	1			
+ECU	GCDG-ECU	42	4200596	61	Male		0	1	1																			
+ECU	GCDG-ECU	42	4200597	944	Male																		0	1	0	1	0	0
+ECU	GCDG-ECU	42	4200598	639	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200599	700	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200600	700	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200601	426	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200602	61	Female		1	1	1																			
+ECU	GCDG-ECU	42	4200603	639	Female												1	1	1	1	0	0						
+ECU	GCDG-ECU	42	4200604	791	Female														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200605	1035	Female																	1	1	1	1	1	0	0
+ECU	GCDG-ECU	42	4200606	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200607	700	Female												1	1	1	1	1							
+ECU	GCDG-ECU	42	4200608	609	Female												1	1	1	1	1	0						
+ECU	GCDG-ECU	42	4200609	730	Female												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200610	639	Female												1	1			0							
+ECU	GCDG-ECU	42	4200611	457	Female											1	1	1										
+ECU	GCDG-ECU	42	4200612	152	Male					1		1																
+ECU	GCDG-ECU	42	4200613	122	Male			1	1	1	1																	
+ECU	GCDG-ECU	42	4200614	730	Male												1	1	1									
+ECU	GCDG-ECU	42	4200615	791	Female														1									
+ECU	GCDG-ECU	42	4200616	152	Male				1																			
+ECU	GCDG-ECU	42	4200617	1035	Male																	1	0	0	0		0	0
+ECU	GCDG-ECU	42	4200618	822	Female														1	1	1		0	0	0			
+ECU	GCDG-ECU	42	4200619	974	Male																		0	0	0		0	1
+ECU	GCDG-ECU	42	4200620	396	Female											1												
+ECU	GCDG-ECU	42	4200621	883	Male														0	1	1	0	0	0	0			
+ECU	GCDG-ECU	42	4200622	457	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200623	852	Female																1			0	0			
+ECU	GCDG-ECU	42	4200624	1004	Female																			0	1		0	0
+ECU	GCDG-ECU	42	4200625	639	Male												1	1	1	0	1	0						
+ECU	GCDG-ECU	42	4200626	548	Female											1	1	1										
+ECU	GCDG-ECU	42	4200627	183	Female					1		1	0	0														
+ECU	GCDG-ECU	42	4200628	730	Male															0			0	0	0			
+ECU	GCDG-ECU	42	4200629	1004	Female																	0	0	0	0	0	0	0
+ECU	GCDG-ECU	42	4200630	274	Female							1	1	0	1	0	0											
+ECU	GCDG-ECU	42	4200631	974	Male																	1	1	1	0	1	0	0
+ECU	GCDG-ECU	42	4200632	548	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200633	365	Male											1	1	0	0									
+ECU	GCDG-ECU	42	4200634	304	Female								1	1	1	0	0	0										
+ECU	GCDG-ECU	42	4200635	700	Female												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200636	487	Male											1	1	1										
+ECU	GCDG-ECU	42	4200637	304	Female								1	1	0	1	0	0										
+ECU	GCDG-ECU	42	4200638	730	Male												1	1	1	1	1							
+ECU	GCDG-ECU	42	4200639	791	Male															1	1		0	0	0			
+ECU	GCDG-ECU	42	4200640	1035	Male																	0	0	0	0	1	0	0
+ECU	GCDG-ECU	42	4200641	365	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200642	791	Female														1	1	1	1	0	0	0			
+ECU	GCDG-ECU	42	4200643	883	Male														1	1	1	1	0	1	1			
+ECU	GCDG-ECU	42	4200644	91	Male		1	1	1	1																		
+ECU	GCDG-ECU	42	4200645	883	Female														1	1	1	1	1	1	1			
+ECU	GCDG-ECU	42	4200646	609	Female												1	1	1									
+ECU	GCDG-ECU	42	4200647	944	Female																			0			0	0
+ECU	GCDG-ECU	42	4200648	91	Female		1			1																		
+ECU	GCDG-ECU	42	4200649	639	Male												1	1	1	1	1	1						
+ECU	GCDG-ECU	42	4200650	517	Female											1	1	1										
+ECU	GCDG-ECU	42	4200651	365	Female											0		0										
+ECU	GCDG-ECU	42	4200652	761	Male														1	1	1							
+ECU	GCDG-ECU	42	4200653	365	Male											1	1	1	0									
+ECU	GCDG-ECU	42	4200654	822	Male														1	1	1			0	0			
+ECU	GCDG-ECU	42	4200655	487	Female											1	1	1	1									
+ECU	GCDG-ECU	42	4200656	517	Female											1	1	1										
+ECU	GCDG-ECU	42	4200657	396	Female											1	1	1	0									
+ECU	GCDG-ECU	42	4200658	30	Male		0	1																				
+ECU	GCDG-ECU	42	4200659	1065	Male																	1	0	1				
+ECU	GCDG-ECU	42	4200660	457	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200661	548	Female											1	1	1										
+ECU	GCDG-ECU	42	4200662	365	Male											1	1	0	0									
+ECU	GCDG-ECU	42	4200663	548	Male											1	1	1	1									
+ECU	GCDG-ECU	42	4200664	913	Male														1	1	1	1	1	1	0			
+ECU	GCDG-ECU	42	4200665	730	Male												1	1	1	1	0	1						
+ECU	GCDG-ECU	42	4200666	244	Male						1	1	1	1	0	1	0											
+ECU	GCDG-ECU	42	4200667	457	Male											1	1	1	1									
