@@ -5,15 +5,16 @@ Version: 0.1.0
 Authors@R: c(
     person("Stef", "van Buuren", email = "stef.vanbuuren@tno.nl", role = c("cre", "aut")),
     person("Iris", "Eekhout", email = "iris.eekhout@tno.nl", role = "aut"),
-    person("Marta", "Rubio Codina", email = "martarubio@iadb.org", role = "ctb"),
-    person("Orazio", "Attanasio", email = "orazio.attanasio@yale.edu", role = "ctb"), 
-    person("Costas", "Meghir", email = "c.meghir@yale.edu", role = "ctb"),
-    person("Emla", "Fitzsimons", email = "e.fitzsimons@ucl.ac.uk", role = "ctb"),
-    person("Sally", "Grantham-McGregor", email = "sallymcgregor@yahoo.com", role = "ctb"),
-    person("Maria Caridad", "Araujo", email = "mcaraujo@iadb.org", role = "ctb"),
-    person("Susan", "Walker", email = "susan.walker@uwimona.edu.jm", role = "ctb"),
-    person("Susan", "Chang", role = "ctb"),
-    person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "ctb"))
+    person("Marta", "Rubio Codina", email = "martarubio@iadb.org", role = "aut"),
+    person("Orazio", "Attanasio", email = "orazio.attanasio@yale.edu", role = "aut"), 
+    person("Costas", "Meghir", email = "c.meghir@yale.edu", role = "aut"),
+    person("Emla", "Fitzsimons", email = "e.fitzsimons@ucl.ac.uk", role = "aut"),
+    person("Sally", "Grantham-McGregor", email = "sallymcgregor@yahoo.com", role = "aut"),
+    person("Maria Caridad", "Araujo", email = "mcaraujo@iadb.org", role = "aut"),
+    person("Susan", "Walker", email = "susan.walker@uwimona.edu.jm", role = "aut"),
+    person("Susan", "Chang", role = "aut"),
+    person("Christine", "Powell", role = "aut"),
+    person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
 Description: The childdevdata package bundles publicly available datasets with 
     individual milestone data for children aged 0-5 years. Measuring child 
