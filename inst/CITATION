@@ -1,0 +1,19 @@
+citHeader("To cite childdevdata in publications use:")
+
+citEntry(
+  entry    = "Manual",
+  title    = "Child Development Data",
+  author   = as.person("Stef van Buuren, Iris Eekhout, Marta Rubio Codina,
+  Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor,
+  Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell,
+  Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter"),
+  year     = "2021",
+  note     = "R package version 0.1.0",
+  url      = "https://github.com/d-score/childevdata",
+  key      = "childevdata-package",
+  textVersion =  "Stef van Buuren, Iris Eekhout, Marta Rubio Codina,
+  Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor,
+  Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell,
+  Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter. Child Development Data.
+  R package childdevdata, version 0.1.0."
+)

@@ -1,0 +1,169 @@
+---
+output: github_document
+always_allow_html: yes
+bibliography: [references.bib]
+biblio-style: apalike
+link-citations: yes
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# childdevdata
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+The goal of `childdevdata` is to support innovation in child development. The package
+
+1. Makes anonymous microdata available to the research community;
+2. Adopts a simple naming schema for developmental milestones;
+3. Supports multiple measurement instruments;
+4. Eases joint analyses of the data.
+
+The current version bundles milestone data from eight studies, x children and x 
+measurement made on z instruments.
+
+## Installation
+
+<!-- You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with: -->
+
+You can install the development version of `childdevdata` from [GitHub](https://github.com) with: -->
+
+``` r
+install.packages("remotes")
+remotes::install_github(repo = "d-score/childdevdata")
+```
+
+## Example
+
+The following example visualises how the proportion of toddlers that are able to walk increases with age.
+
+```{r example}
+library(childdevdata)
+library(ggplot2)
+
+# we use the Dutch SMOCC data
+data <- with(gcdg_nld_smocc, 
+             data.frame(age = round(agedays/365.25, 4),
+                        walk = ddigmd068))
+ggplot(na.omit(data), aes(age, walk)) +
+  geom_point(cex = 0.5) +
+  geom_smooth(method = "gam", formula = y ~ s(x, bs = "cs"), 
+              se = FALSE, lwd = 0.5) +
+  theme_bw()
+```
+
+## Overview of available dataset and documentation
+
+The package contains multiple datasets. Obtain the list of datasets by
+
+```{r datalist}
+data(package = "childdevdata")$results[, "Item"]
+```
+
+The documentation of the data can be found by typing into the console:
+
+```{r}
+?gcdg_col_lt42m
+```
+
+The size of the data is 
+
+```{r}
+dim(gcdg_col_lt42m)
+```
+
+The first six rows and first nine columns are
+
+```{r}
+head(gcdg_col_lt42m[, 1:9])
+```
+
+The first seven columns are administrative and background variables. Column numbers eight and up hold the milestone scores. 
+
+
+## Combining data
+
+Concatenating two or more data is straightforward using `dplyr`. The following code concatenates all datasets.
+
+```{r concatenate}
+library(dplyr)
+alldata <- bind_rows(gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
+dim(alldata)
+```
+
+Both the number of rows and the number of columns have increased. Milestones not appearing in a particular data obtain all missing (`NA`) scores.
+
+The number of records per cohort is
+
+```{r}
+table(alldata$cohort)
+```
+
+## Calculating D-score and DAZ
+
+The [`dscore` package](https://d-score.org/dscore/) calculates the *D-score* and the *D-score adjusted for age Z-score* (DAZ) for all cases:
+
+```{r}
+library(dscore)
+alldata$age <- round(alldata$agedays/365.25, 4)
+d <- dscore(alldata)
+head(d)
+dim(d)
+```
+
+We visualise the D-score distribution by age per cohort as
+
+```{r}
+alldata <- bind_cols(alldata, d)
+ggplot(alldata, aes(age, d, group = cohort)) +
+  geom_point(cex = 0.3) +
+  facet_wrap(~ cohort) +
+  theme_bw()
+```
+
+## Why this package?
+
+We all want our children to grow and prosper. While there is no shortage of apps and instruments to track child development, it is often unclear which data went into the construction of these tools. In order to improve measurement and norm setting of child development, we need child-level response data per milestone and age. However, no such public dataset seem to exist. The `childdevdata` package fills that void.
+
+The package grew out of a project in which we collected milestone data from 16 cohorts. See @weber2019 and <http://d-score.org/dbook2/> for results. Eight of the cohort owners graciously decided to make their data available for third parties. We are grateful to them.
+
+## How to use the data?
+
+Tremendous effort has gone into the collection and harmonisation of the data. You can use the data in this package under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. Basically, this means that you may share and adapt the data, on the condition that you give appropriate credit and clearly indicate any changes you've made. See the license text for details.
+
+We expect that you will properly cite the source data when you use the data in your own product or publication, as follows:
+
+- If you use one dataset, please cite the publication(s) given in the documentation of that dataset. 
+- If you use two or more datasets, cite the publication(s) for each dataset *and* cite the `childdevdata` package.
+
+The citation of the `childevdata` package is
+
+```
+@Manual{childevdata-package,
+    title = {Child Development Data},
+    author = {Stef {van Buuren} and Iris Eekhout and Marta Rubio Codina and Orazio Attanasio and Costas Meghir and 
+    Emla Fitzsimons and Sally Grantham-McGregor and Maria Caridad Araujo and Susan Walker and Susan Chang and 
+    Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter},
+    year = {2021},
+    note = {R package version 0.1.0},
+    url = {https://github.com/d-score/childevdata},
+  }
+```
+
+## Want to contribute?
+
+Do you have similar data and want to help others to advance the field? Please let us know. We hope that the `childdevdata` package may continue to grow into a valuable resource for developers and researchers worldwide.
+
+## References
+
