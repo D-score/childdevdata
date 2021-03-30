@@ -13,6 +13,8 @@ Authors@R: c(
     person("Maria Caridad", "Araujo", email = "mcaraujo@iadb.org", role = "aut"),
     person("Susan", "Walker", email = "susan.walker@uwimona.edu.jm", role = "aut"),
     person("Susan", "Chang", role = "aut"),
+    person("Ann", "Weber", email = "annweber@unr.edu", role = "aut"),
+    person("Lia", "Fernald", email = "fernald@berkeley.edu", role = "aut"),
     person("Christine", "Powell", role = "aut"),
     person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
