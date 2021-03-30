@@ -1,7 +1,7 @@
 library(dscore)
 library(knitr)
 
-data <- gcdg_col_lt45m
+data <- gcdg_zaf
 items <- names(data)[-(1:7)]
 labels <- get_labels(items, trim = 60)
 labels <- labels[items]
