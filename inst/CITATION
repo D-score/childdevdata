@@ -9,7 +9,7 @@ citEntry(
   Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter"),
   year     = "2021",
   note     = "R package version 0.1.0",
-  url      = "https://github.com/d-score/childevdata",
+  url      = "https://github.com/d-score/childdevdata",
   key      = "childevdata-package",
   textVersion =  "Stef van Buuren, Iris Eekhout, Marta Rubio Codina,
   Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor,
