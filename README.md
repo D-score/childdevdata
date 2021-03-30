@@ -206,7 +206,7 @@ The citation of the `childevdata` package is
         Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter},
         year = {2021},
         note = {R package version 0.1.0},
-        url = {https://github.com/d-score/childevdata},
+        url = {https://github.com/d-score/childdevdata},
       }
 
 ## Want to contribute?
