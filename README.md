@@ -208,17 +208,33 @@ data in your own product or publication, as follows:
 -   If you use two or more datasets, cite the publication(s) for each
     dataset *and* cite the `childdevdata` package.
 
-The citation of the `childevdata` package is
+The citation of the `childevdata` data package is
 
-    @Manual{childevdata-package,
-        title = {Child Development Data},
-        author = {Stef {van Buuren} and Iris Eekhout and Marta Rubio Codina and Orazio Attanasio and Costas Meghir and 
-        Emla Fitzsimons and Sally Grantham-McGregor and Maria Caridad Araujo and Susan Walker and Susan Chang and 
-        Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter and Betsy Lozoff},
-        year = {2021},
-        note = {R package version 1.0.0},
-        url = {https://github.com/d-score/childdevdata},
-      }
+    @dataset{stef_van_buuren_2021_4685945,
+      author       = {Stef van Buuren and
+                      Iris Eekhout and
+                      Marta Rubio Codina and
+                      Orazio Attanasio and
+                      Costas Meghir and
+                      Emla Fitzsimons and
+                      Sally Grantham-McGregor and
+                      Maria Caridad Araujo and
+                      Susan Walker and
+                      Susan Chang and
+                      Christine Powell and
+                      Ann Weber and
+                      Lia Fernald and
+                      Paul Verkerk and
+                      Linda Richter and
+                      Betsy Lozoff},
+      title        = {D-score/childdevdata: childdevdata 1.0.0},
+      month        = apr,
+      year         = 2021,
+      publisher    = {Zenodo},
+      version      = {v1.0.0},
+      doi          = {10.5281/zenodo.4685945},
+      url          = {https://doi.org/10.5281/zenodo.4685945}
+    }
 
 ## Want to contribute?
 
