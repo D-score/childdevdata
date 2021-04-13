@@ -7,6 +7,7 @@
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![DOI](https://zenodo.org/badge/353137452.svg)](https://zenodo.org/badge/latestdoi/353137452)
 <!-- badges: end -->
 
 The goal of `childdevdata` is to support innovation in child
