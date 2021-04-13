@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 # childdevdata
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 The goal of `childdevdata` is to support innovation in child development. The package
@@ -30,8 +30,8 @@ The goal of `childdevdata` is to support innovation in child development. The pa
 3. Supports multiple measurement instruments;
 4. Eases joint analyses of the data.
 
-The current version bundles milestone data from eight studies, x children and x 
-measurement made on z instruments.
+The current version bundles milestone data from ten studies, containing 1,116,061 assessments 
+made on 10831 unique children during 28465 visits, covering 21 different instruments.
 
 ## Installation
 
@@ -48,7 +48,7 @@ remotes::install_github(repo = "d-score/childdevdata")
 
 The following example visualises how the proportion of toddlers that are able to walk increases with age.
 
-```{r example}
+```{r example, fig.retina=2}
 library(childdevdata)
 library(ggplot2)
 
@@ -94,20 +94,20 @@ The first seven columns are administrative and background variables. Column numb
 
 ## Combining data
 
-Concatenating two or more data is straightforward using `dplyr`. The following code concatenates all datasets.
+Concatenating two or more data is straightforward using `dplyr`. The following code concatenates all avialable GCDG datasets.
 
 ```{r concatenate}
 library(dplyr)
-alldata <- bind_rows(gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
+alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
 dim(alldata)
 ```
 
 Both the number of rows and the number of columns have increased. Milestones not appearing in a particular data obtain all missing (`NA`) scores.
 
-The number of records per cohort is
+The number of records per cohort by sex is
 
 ```{r}
-table(alldata$cohort)
+table(alldata$cohort, alldata$sex)
 ```
 
 ## Calculating D-score and DAZ
@@ -124,11 +124,12 @@ dim(d)
 
 We visualise the D-score distribution by age per cohort as
 
-```{r}
+```{r fig.retina=2}
 alldata <- bind_cols(alldata, d)
 ggplot(alldata, aes(age, d, group = cohort)) +
   geom_point(cex = 0.3) +
   facet_wrap(~ cohort) +
+  ylab("D-score") + xlab("Age (years)") +
   theme_bw()
 ```
 
@@ -136,7 +137,7 @@ ggplot(alldata, aes(age, d, group = cohort)) +
 
 We all want our children to grow and prosper. While there is no shortage of apps and instruments to track child development, it is often unclear which data went into the construction of these tools. In order to improve measurement and norm setting of child development, we need child-level response data per milestone and age. However, no such public dataset seem to exist. The `childdevdata` package fills that void.
 
-The package grew out of a project in which we collected milestone data from 16 cohorts. See @weber2019 and <http://d-score.org/dbook2/> for results. Eight of the cohort owners graciously decided to make their data available for third parties. We are grateful to them.
+The package grew out of a project in which we collected milestone data from 16 cohorts. See @weber2019 and <http://d-score.org/dbook2/> for results. Ten cohort owners graciously decided to make their data available for third parties. We are grateful to them.
 
 ## How to use the data?
 
@@ -154,9 +155,9 @@ The citation of the `childevdata` package is
     title = {Child Development Data},
     author = {Stef {van Buuren} and Iris Eekhout and Marta Rubio Codina and Orazio Attanasio and Costas Meghir and 
     Emla Fitzsimons and Sally Grantham-McGregor and Maria Caridad Araujo and Susan Walker and Susan Chang and 
-    Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter},
+    Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter and Betsy Lozoff},
     year = {2021},
-    note = {R package version 0.1.0},
+    note = {R package version 1.0.0},
     url = {https://github.com/d-score/childdevdata},
   }
 ```

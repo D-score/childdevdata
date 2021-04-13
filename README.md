@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 The goal of `childdevdata` is to support innovation in child
@@ -17,8 +17,9 @@ development. The package
 3.  Supports multiple measurement instruments;
 4.  Eases joint analyses of the data.
 
-The current version bundles milestone data from eight studies, x
-children and x measurement made on z instruments.
+The current version bundles milestone data from ten studies, containing
+1,116,061 assessments made on 10831 unique children during 28465 visits,
+covering 21 different instruments.
 
 ## Installation
 
@@ -60,8 +61,9 @@ The package contains multiple datasets. Obtain the list of datasets by
 
 ``` r
 data(package = "childdevdata")$results[, "Item"]
-#> [1] "gcdg_col_lt42m"   "gcdg_col_lt45m"   "gcdg_ecu"         "gcdg_jam_lbw"    
-#> [5] "gcdg_jam_stunted" "gcdg_mdg"         "gcdg_nld_smocc"   "gcdg_zaf"
+#>  [1] "gcdg_chl_1"       "gcdg_chn"         "gcdg_col_lt42m"   "gcdg_col_lt45m"  
+#>  [5] "gcdg_ecu"         "gcdg_jam_lbw"     "gcdg_jam_stunted" "gcdg_mdg"        
+#>  [9] "gcdg_nld_smocc"   "gcdg_zaf"
 ```
 
 The documentation of the data can be found by typing into the console:
@@ -98,7 +100,7 @@ Column numbers eight and up hold the milestone scores.
 ## Combining data
 
 Concatenating two or more data is straightforward using `dplyr`. The
-following code concatenates all datasets.
+following code concatenates all avialable GCDG datasets.
 
 ``` r
 library(dplyr)
@@ -110,24 +112,31 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
-alldata <- bind_rows(gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
+alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
 dim(alldata)
-#> [1] 25336  1280
+#> [1] 28465  1306
 ```
 
 Both the number of rows and the number of columns have increased.
 Milestones not appearing in a particular data obtain all missing (`NA`)
 scores.
 
-The number of records per cohort is
+The number of records per cohort by sex is
 
 ``` r
-table(alldata$cohort)
-#> 
-#>   GCDG-COL-LT42M   GCDG-COL-LT45M         GCDG-ECU     GCDG-JAM-LBW 
-#>             1311             1335              667              443 
-#> GCDG-JAM-STUNTED         GCDG-MDG   GCDG-NLD-SMOCC         GCDG-ZAF 
-#>              477              205            16722             4176
+table(alldata$cohort, alldata$sex)
+#>                   
+#>                    Female Male
+#>   GCDG-CHL-1          970 1169
+#>   GCDG-CHN            509  481
+#>   GCDG-COL-LT42M      646  665
+#>   GCDG-COL-LT45M      651  684
+#>   GCDG-ECU            337  330
+#>   GCDG-JAM-LBW        242  201
+#>   GCDG-JAM-STUNTED    207  270
+#>   GCDG-MDG            113   92
+#>   GCDG-NLD-SMOCC     8499 8223
+#>   GCDG-ZAF           2154 2018
 ```
 
 ## Calculating D-score and DAZ
@@ -141,15 +150,15 @@ library(dscore)
 alldata$age <- round(alldata$agedays/365.25, 4)
 d <- dscore(alldata)
 head(d)
-#>      a  n     p    d   sem    daz
-#> 1 1.81 29 0.345 58.0 0.950 -0.932
-#> 2 3.19 49 0.857 71.8 0.566  0.515
-#> 3 0.86 41 0.537 45.4 0.541 -0.282
-#> 4 3.39 36 0.556 69.3 0.523 -0.773
-#> 5 1.86 42 0.691 65.3 0.542  1.475
-#> 6 2.94 44 0.795 70.0 0.511  0.297
+#>       a  n     p    d   sem    daz
+#> 1 1.024 29 0.690 50.4 0.666  0.286
+#> 2 1.509 22 0.955 57.8 1.445  0.269
+#> 3 0.975 29 0.724 50.8 0.682  0.742
+#> 4 1.016 29 0.759 51.3 0.700  0.649
+#> 5 1.016 22 0.682 49.1 0.677 -0.099
+#> 6 1.517 25 0.840 56.9 1.058 -0.070
 dim(d)
-#> [1] 25336     6
+#> [1] 28465     6
 ```
 
 We visualise the D-score distribution by age per cohort as
@@ -159,8 +168,9 @@ alldata <- bind_cols(alldata, d)
 ggplot(alldata, aes(age, d, group = cohort)) +
   geom_point(cex = 0.3) +
   facet_wrap(~ cohort) +
+  ylab("D-score") + xlab("Age (years)") +
   theme_bw()
-#> Warning: Removed 253 rows containing missing values (geom_point).
+#> Warning: Removed 380 rows containing missing values (geom_point).
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
@@ -177,8 +187,8 @@ dataset seem to exist. The `childdevdata` package fills that void.
 The package grew out of a project in which we collected milestone data
 from 16 cohorts. See [Weber et al.](#ref-weber2019)
 ([2019](#ref-weber2019)) and <http://d-score.org/dbook2/> for results.
-Eight of the cohort owners graciously decided to make their data
-available for third parties. We are grateful to them.
+Ten cohort owners graciously decided to make their data available for
+third parties. We are grateful to them.
 
 ## How to use the data?
 
@@ -203,9 +213,9 @@ The citation of the `childevdata` package is
         title = {Child Development Data},
         author = {Stef {van Buuren} and Iris Eekhout and Marta Rubio Codina and Orazio Attanasio and Costas Meghir and 
         Emla Fitzsimons and Sally Grantham-McGregor and Maria Caridad Araujo and Susan Walker and Susan Chang and 
-        Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter},
+        Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter and Betsy Lozoff},
         year = {2021},
-        note = {R package version 0.1.0},
+        note = {R package version 1.0.0},
         url = {https://github.com/d-score/childdevdata},
       }
 
