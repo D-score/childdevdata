@@ -31,7 +31,7 @@ The goal of `childdevdata` is to support innovation in child development. The pa
 4. Eases joint analyses of the data.
 
 The current version bundles milestone data from ten studies, containing 1,116,061 assessments 
-made on 10831 unique children during 28465 visits, covering 21 different instruments.
+made on 10,831 unique children during 28,465 visits, covering 21 different instruments.
 
 ## Installation
 

@@ -18,8 +18,8 @@ development. The package
 4.  Eases joint analyses of the data.
 
 The current version bundles milestone data from ten studies, containing
-1,116,061 assessments made on 10831 unique children during 28465 visits,
-covering 21 different instruments.
+1,116,061 assessments made on 10,831 unique children during 28,465
+visits, covering 21 different instruments.
 
 ## Installation
 
