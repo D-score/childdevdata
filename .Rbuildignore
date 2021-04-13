@@ -5,3 +5,4 @@
 ^scripts$
 ^README\.Rmd$
 ^references.bib$
+^docs$
