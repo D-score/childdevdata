@@ -17,7 +17,8 @@ Authors@R: c(
     person("Ann", "Weber", email = "annweber@unr.edu", role = "aut"),
     person("Lia", "Fernald", email = "fernald@berkeley.edu", role = "aut"),
     person("Paul", "Verkerk", email = "paul.verkerk@tno.nl", role = "aut"),
-    person("Linda", "Richter", email = "linda.richter@wits.ac.za", role = "aut"))
+    person("Linda", "Richter", email = "linda.richter@wits.ac.za", role = "aut"),
+    person("Betsy", "Lozoff", email = "blozoff@umich.edu", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
 Description: The childdevdata package bundles publicly available datasets with 
     individual milestone data for children aged 0-5 years. Measuring child 
