@@ -112,7 +112,7 @@ table(alldata$cohort, alldata$sex)
 
 ## Calculating D-score and DAZ
 
-The [`dscore` package](https://d-score.org/dscore/) calculates the *D-score* and the *D-score adjusted for age Z-score* (DAZ) for all cases:
+The [`dscore` package](https://d-score.org/dscore/) calculates the *D-score* [@vanbuuren2014] and the *D-score adjusted for age Z-score* (DAZ) for all cases:
 
 ```{r}
 library(dscore)

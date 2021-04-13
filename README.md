@@ -142,8 +142,8 @@ table(alldata$cohort, alldata$sex)
 ## Calculating D-score and DAZ
 
 The [`dscore` package](https://d-score.org/dscore/) calculates the
-*D-score* and the *D-score adjusted for age Z-score* (DAZ) for all
-cases:
+*D-score* ([van Buuren 2014](#ref-vanbuuren2014)) and the *D-score
+adjusted for age Z-score* (DAZ) for all cases:
 
 ``` r
 library(dscore)
@@ -229,6 +229,14 @@ worldwide.
 ## References
 
 <div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-vanbuuren2014" class="csl-entry">
+
+van Buuren, S. 2014. “Growth Charts of Human Development.” *Statistical
+Methods in Medical Research* 23 (4): 346–68.
+<https://stefvanbuuren.name/publication/van-buuren-2014-gc/>.
+
+</div>
 
 <div id="ref-weber2019" class="csl-entry">
 
