@@ -1,7 +1,7 @@
 Package: childdevdata
 Type: Package
 Title: Child Development Data
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(
     person("Stef", "van Buuren", email = "stef.vanbuuren@tno.nl", role = c("cre", "aut")),
     person("Iris", "Eekhout", email = "iris.eekhout@tno.nl", role = "aut"),
