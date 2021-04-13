@@ -37,7 +37,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">childdevdata</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
       </span>
     </div>
 
@@ -51,6 +51,9 @@
 </li>
 <li>
   <a href="reference/index.html">Reference</a>
+</li>
+<li>
+  <a href="news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -84,7 +87,7 @@
 <li>Supports multiple measurement instruments;</li>
 <li>Eases joint analyses of the data.</li>
 </ol>
-<p>The current version bundles milestone data from eight studies, x children and x measurement made on z instruments.</p>
+<p>The current version bundles milestone data from ten studies, containing 1,116,061 assessments made on 10,831 unique children during 28,465 visits, covering 21 different instruments.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -119,8 +122,9 @@
 <p>The package contains multiple datasets. Obtain the list of datasets by</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"childdevdata"</span><span class="op">)</span><span class="op">$</span><span class="va">results</span><span class="op">[</span>, <span class="st">"Item"</span><span class="op">]</span>
-<span class="co">#&gt; [1] "gcdg_col_lt42m"   "gcdg_col_lt45m"   "gcdg_ecu"         "gcdg_jam_lbw"    </span>
-<span class="co">#&gt; [5] "gcdg_jam_stunted" "gcdg_mdg"         "gcdg_nld_smocc"   "gcdg_zaf"</span></code></pre></div>
+<span class="co">#&gt;  [1] "gcdg_chl_1"       "gcdg_chn"         "gcdg_col_lt42m"   "gcdg_col_lt45m"  </span>
+<span class="co">#&gt;  [5] "gcdg_ecu"         "gcdg_jam_lbw"     "gcdg_jam_stunted" "gcdg_mdg"        </span>
+<span class="co">#&gt;  [9] "gcdg_nld_smocc"   "gcdg_zaf"</span></code></pre></div>
 <p>The documentation of the data can be found by typing into the console:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="op">?</span><span class="va">gcdg_col_lt42m</span></code></pre></div>
@@ -145,7 +149,7 @@
 <div id="combining-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#combining-data" class="anchor"></a>Combining data</h2>
-<p>Concatenating two or more data is straightforward using <code>dplyr</code>. The following code concatenates all datasets.</p>
+<p>Concatenating two or more data is straightforward using <code>dplyr</code>. The following code concatenates all avialable GCDG datasets.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
 <span class="co">#&gt; </span>
@@ -156,52 +160,60 @@
 <span class="co">#&gt; The following objects are masked from 'package:base':</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-<span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span>
+<span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_chl_1</span>, <span class="va">gcdg_chn</span>, <span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
-<span class="co">#&gt; [1] 25336  1280</span></code></pre></div>
+<span class="co">#&gt; [1] 28465  1306</span></code></pre></div>
 <p>Both the number of rows and the number of columns have increased. Milestones not appearing in a particular data obtain all missing (<code>NA</code>) scores.</p>
-<p>The number of records per cohort is</p>
+<p>The number of records per cohort by sex is</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">cohort</span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;   GCDG-COL-LT42M   GCDG-COL-LT45M         GCDG-ECU     GCDG-JAM-LBW </span>
-<span class="co">#&gt;             1311             1335              667              443 </span>
-<span class="co">#&gt; GCDG-JAM-STUNTED         GCDG-MDG   GCDG-NLD-SMOCC         GCDG-ZAF </span>
-<span class="co">#&gt;              477              205            16722             4176</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">cohort</span>, <span class="va">alldata</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span>
+<span class="co">#&gt;                   </span>
+<span class="co">#&gt;                    Female Male</span>
+<span class="co">#&gt;   GCDG-CHL-1          970 1169</span>
+<span class="co">#&gt;   GCDG-CHN            509  481</span>
+<span class="co">#&gt;   GCDG-COL-LT42M      646  665</span>
+<span class="co">#&gt;   GCDG-COL-LT45M      651  684</span>
+<span class="co">#&gt;   GCDG-ECU            337  330</span>
+<span class="co">#&gt;   GCDG-JAM-LBW        242  201</span>
+<span class="co">#&gt;   GCDG-JAM-STUNTED    207  270</span>
+<span class="co">#&gt;   GCDG-MDG            113   92</span>
+<span class="co">#&gt;   GCDG-NLD-SMOCC     8499 8223</span>
+<span class="co">#&gt;   GCDG-ZAF           2154 2018</span></code></pre></div>
 </div>
 <div id="calculating-d-score-and-daz" class="section level2">
 <h2 class="hasAnchor">
 <a href="#calculating-d-score-and-daz" class="anchor"></a>Calculating D-score and DAZ</h2>
-<p>The <a href="https://d-score.org/dscore/"><code>dscore</code> package</a> calculates the <em>D-score</em> and the <em>D-score adjusted for age Z-score</em> (DAZ) for all cases:</p>
+<p>The <a href="https://d-score.org/dscore/"><code>dscore</code> package</a> calculates the <em>D-score</em> (<a href="#ref-vanbuuren2014">van Buuren 2014</a>) and the <em>D-score adjusted for age Z-score</em> (DAZ) for all cases:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/dscore">dscore</a></span><span class="op">)</span>
 <span class="va">alldata</span><span class="op">$</span><span class="va">age</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span>
 <span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://d-score.github.io/dscore/reference/dscore.html">dscore</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt;      a  n     p    d   sem    daz</span>
-<span class="co">#&gt; 1 1.81 29 0.345 58.0 0.950 -0.932</span>
-<span class="co">#&gt; 2 3.19 49 0.857 71.8 0.566  0.515</span>
-<span class="co">#&gt; 3 0.86 41 0.537 45.4 0.541 -0.282</span>
-<span class="co">#&gt; 4 3.39 36 0.556 69.3 0.523 -0.773</span>
-<span class="co">#&gt; 5 1.86 42 0.691 65.3 0.542  1.475</span>
-<span class="co">#&gt; 6 2.94 44 0.795 70.0 0.511  0.297</span>
+<span class="co">#&gt;       a  n     p    d   sem    daz</span>
+<span class="co">#&gt; 1 1.024 29 0.690 50.4 0.666  0.286</span>
+<span class="co">#&gt; 2 1.509 22 0.955 57.8 1.445  0.269</span>
+<span class="co">#&gt; 3 0.975 29 0.724 50.8 0.682  0.742</span>
+<span class="co">#&gt; 4 1.016 29 0.759 51.3 0.700  0.649</span>
+<span class="co">#&gt; 5 1.016 22 0.682 49.1 0.677 -0.099</span>
+<span class="co">#&gt; 6 1.517 25 0.840 56.9 1.058 -0.070</span>
 <span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt; [1] 25336     6</span></code></pre></div>
+<span class="co">#&gt; [1] 28465     6</span></code></pre></div>
 <p>We visualise the D-score distribution by age per cohort as</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_cols</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="va">d</span><span class="op">)</span>
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">d</span>, group <span class="op">=</span> <span class="va">cohort</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="op">~</span> <span class="va">cohort</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ylab</a></span><span class="op">(</span><span class="st">"D-score"</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">xlab</a></span><span class="op">(</span><span class="st">"Age (years)"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; Warning: Removed 253 rows containing missing values (geom_point).</span></code></pre></div>
+<span class="co">#&gt; Warning: Removed 380 rows containing missing values (geom_point).</span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-7-1.png" width="100%"></p>
 </div>
 <div id="why-this-package" class="section level2">
 <h2 class="hasAnchor">
 <a href="#why-this-package" class="anchor"></a>Why this package?</h2>
 <p>We all want our children to grow and prosper. While there is no shortage of apps and instruments to track child development, it is often unclear which data went into the construction of these tools. In order to improve measurement and norm setting of child development, we need child-level response data per milestone and age. However, no such public dataset seem to exist. The <code>childdevdata</code> package fills that void.</p>
-<p>The package grew out of a project in which we collected milestone data from 16 cohorts. See <a href="#ref-weber2019">Weber et al.</a> (<a href="#ref-weber2019">2019</a>) and <a href="http://d-score.org/dbook2/" class="uri">http://d-score.org/dbook2/</a> for results. Eight of the cohort owners graciously decided to make their data available for third parties. We are grateful to them.</p>
+<p>The package grew out of a project in which we collected milestone data from 16 cohorts. See <a href="#ref-weber2019">Weber et al.</a> (<a href="#ref-weber2019">2019</a>) and <a href="http://d-score.org/dbook2/" class="uri">http://d-score.org/dbook2/</a> for results. Ten cohort owners graciously decided to make their data available for third parties. We are grateful to them.</p>
 </div>
 <div id="how-to-use-the-data" class="section level2">
 <h2 class="hasAnchor">
@@ -217,9 +229,9 @@
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    title <span class="ot">=</span> {Child Development Data},</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    author <span class="ot">=</span> {Stef {van Buuren} and Iris Eekhout and Marta Rubio Codina and Orazio Attanasio and Costas Meghir and </span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    Emla Fitzsimons and Sally Grantham<span class="sc">-</span>McGregor and Maria Caridad Araujo and Susan Walker and Susan Chang and </span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter},</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    Christine Powell and Ann Weber and Lia Fernald and Paul Verkerk and Linda Richter and Betsy Lozoff},</span>
 <span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    year <span class="ot">=</span> {<span class="dv">2021</span>},</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    note <span class="ot">=</span> {R package version <span class="dv">0</span>.<span class="fl">1.0</span>},</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    note <span class="ot">=</span> {R package version <span class="dv">1</span>.<span class="fl">0.0</span>},</span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    url <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>github.com<span class="sc">/</span>d<span class="sc">-</span>score<span class="sc">/</span>childdevdata},</span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>  }</span></code></pre></div>
 </div>
@@ -232,6 +244,9 @@
 <h2 class="hasAnchor">
 <a href="#references" class="anchor"></a>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-vanbuuren2014" class="csl-entry">
+van Buuren, S. 2014. “Growth Charts of Human Development.” <em>Statistical Methods in Medical Research</em> 23 (4): 346–68. <a href="https://stefvanbuuren.name/publication/van-buuren-2014-gc/" class="uri">https://stefvanbuuren.name/publication/van-buuren-2014-gc/</a>.
+</div>
 <div id="ref-weber2019" class="csl-entry">
 Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grantham-McGregor, M. C. Araujo, et al. 2019. “The D-Score: A Metric for Interpreting the Early Development of Infants and Toddlers Across Global Settings.” <em>BMJ Global Health</em> 4: e001724. <a href="https://gh.bmj.com/content/bmjgh/4/6/e001724.full.pdf" class="uri">https://gh.bmj.com/content/bmjgh/4/6/e001724.full.pdf</a>.
 </div>
@@ -279,13 +294,14 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 <li>Lia Fernald <br><small class="roles"> Author </small>  </li>
 <li>Paul Verkerk <br><small class="roles"> Author </small>  </li>
 <li>Linda Richter <br><small class="roles"> Author </small>  </li>
+<li>Betsy Lozoff <br><small class="roles"> Author </small>  </li>
 </ul>
 </div>
 
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 </ul>
 </div>
 </div>
@@ -293,7 +309,7 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 
 
       <footer><div class="copyright">
-  <p>Developed by Stef van Buuren, Iris Eekhout, Marta Rubio Codina, Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor, Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell, Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter.</p>
+  <p>Developed by Stef van Buuren, Iris Eekhout, Marta Rubio Codina, Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor, Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell, Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter, Betsy Lozoff.</p>
 </div>
 
 <div class="pkgdown">
