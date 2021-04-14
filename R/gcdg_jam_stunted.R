@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 159 unique children aged 0.75-4.2 years, three waves.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: Griffiths Scales (`gri`)
 #'
@@ -15,7 +15,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -306,5 +306,5 @@
 #' Grantham-McGregor SM, Powell CA, Walker SP, Himes JH. Nutritional
 #' supplementation, psychosocial stimulation, and mental development of stunted
 #' children: the Jamaican Study. The Lancet. 1991;338:1-5.
-#' \url{https://doi.org/10.1016/0140-6736(91)90001-6}
+#' \doi{10.1016/0140-6736(91)90001-6}
 "gcdg_jam_stunted"

@@ -4,7 +4,7 @@
 #' 2389 children measured at 4176 visits (rows) between ages 0.3-4.0 year,
 #' with up to four visits per child.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: Bayley I (`by1`), Griffiths (`gri`),
 #' South African adapted Griffith (`sgr`), Vineland Social Maturity Scale (`vin`)
@@ -17,7 +17,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -381,5 +381,5 @@
 #' Richter L, Norris S, Pettifor J, Yach D, Cameron N. Cohort profile:
 #' Mandela’s children: the 1990 Birth to Twenty study in South Africa.
 #' International Journal of Epidemiology. 2007;36:504-511.
-#' \url{https://doi.org/10.1093/ije/dym016}
+#' \doi{10.1093/ije/dym016}
 "gcdg_zaf"

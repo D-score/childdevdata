@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 707 unique children measured at two time points.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: Bayley III (`by3`).
 #'
@@ -15,7 +15,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -287,7 +287,6 @@
 #' Rubio-Codina M. Using the infrastructure of a conditional cash transfer
 #' program to deliver a scalable integrated early child development program in
 #' Colombia: cluster randomized controlled trial. BMJ. 2014;349.
-#' \url{https://www.bmj.com/content/349/bmj.g5785}
 #' @examples
 #' head(gcdg_col_lt45m)
 "gcdg_col_lt45m"

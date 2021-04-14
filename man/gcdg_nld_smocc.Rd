@@ -10,7 +10,7 @@ A \code{data.frame} with 16722 rows and 64 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -81,7 +81,7 @@ A dataset with developmental scores at the item level for
 2038 children measured at 16722 visits (rows) between ages 0-2.5 year.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Dutch Development Instrument (Van Wiechenschema, version 1983): \code{ddi}
 }

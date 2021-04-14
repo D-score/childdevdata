@@ -10,7 +10,7 @@ A \code{data.frame} with 1335 rows and 269 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -286,7 +286,7 @@ A dataset with developmental scores at the item level for
 707 unique children measured at two time points.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Bayley III (\code{by3}).
 }
@@ -298,6 +298,5 @@ Attanasio OP, Fernández C, Fitzsimons EOA, Grantham-McGregor SM, Meghir C,
 Rubio-Codina M. Using the infrastructure of a conditional cash transfer
 program to deliver a scalable integrated early child development program in
 Colombia: cluster randomized controlled trial. BMJ. 2014;349.
-\url{https://www.bmj.com/content/349/bmj.g5785}
 }
 \keyword{datasets}

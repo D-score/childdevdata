@@ -99,5 +99,4 @@
 #' increases infant iron status at 9 mo without decreasing growth or increasing
 #' illness in a randomized clinical trial in rural China.
 #' The Journal of nutrition. 2016;146:612-621.
-#' \url{https://academic.oup.com/jn/article/146/3/612/4578262}
 "gcdg_chn"

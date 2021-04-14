@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 667 unique children. Cross-sectional.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: Barrera Moncada (`bar`).
 #'
@@ -15,7 +15,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -44,5 +44,5 @@
 #' @references
 #' Paxson C, Schady N. Does money matter? The effects of cash transfers on child
 #' development in rural Ecuador. Economic development and cultural change.
-#' 2010;59:187-229. \url{http://www.jstor.org/stable/10.1086/655458}
+#' 2010;59:187-229.
 "gcdg_ecu"

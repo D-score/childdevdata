@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 1311 children measured at ages 0.5-3.5 year.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: ASQ screener (`aqi`), Battelle (`bat`), Bayley III (`by3`),
 #' Denver (`den`) and WHO motor milestones (`mds`).
@@ -16,7 +16,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |

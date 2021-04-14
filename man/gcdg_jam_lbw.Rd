@@ -10,7 +10,7 @@ A \code{data.frame} with 443 rows and 192 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -209,7 +209,7 @@ A dataset with developmental scores at the item level for
 226 unique children aged 1.0-2.2 years, two waves.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Griffiths Scales (\code{gri})
 }
@@ -217,6 +217,5 @@ Instruments: Griffiths Scales (\code{gri})
 Walker SP, Chang SM, Powell CA, Grantham-McGregor SM. Psychosocial
 intervention improves the development of term low-birth-weight infants.
 The Journal of Nutrition. 2004;134:1417-1423.
-\url{https://academic.oup.com/jn/article/134/6/1417/4688752}
 }
 \keyword{datasets}

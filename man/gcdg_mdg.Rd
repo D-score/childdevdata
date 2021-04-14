@@ -10,7 +10,7 @@ A \code{data.frame} with 205 rows and 47 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -64,7 +64,7 @@ A dataset with developmental scores at the item level for
 205 unique children. Cross-sectional.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: McCarthy Scales of Children's Abilities (\code{mac}), Pegboard (\code{peg}),
 Stanford Binet Intelligence (\code{sbi}).
@@ -73,6 +73,6 @@ Stanford Binet Intelligence (\code{sbi}).
 Fernald LCH, Weber A, Galasso E, Ratsifandrihamanana L. Socioeconomic gradients
 and child development in a very low income population: evidence from Madagascar.
 Developmental science. 2011;14:832-847.
-\url{https://doi.org/10.1111/j.1467-7687.2010.01032.x}
+\doi{10.1111/j.1467-7687.2010.01032.x}
 }
 \keyword{datasets}

@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 226 unique children aged 1.0-2.2 years, two waves.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: Griffiths Scales (`gri`)
 #'
@@ -15,7 +15,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -208,5 +208,4 @@
 #' Walker SP, Chang SM, Powell CA, Grantham-McGregor SM. Psychosocial
 #' intervention improves the development of term low-birth-weight infants.
 #' The Journal of Nutrition. 2004;134:1417-1423.
-#' \url{https://academic.oup.com/jn/article/134/6/1417/4688752}
 "gcdg_jam_lbw"

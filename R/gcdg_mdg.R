@@ -3,7 +3,7 @@
 #' A dataset with developmental scores at the item level for
 #' 205 unique children. Cross-sectional.
 #'
-#' The combination of `id` and `agedays` identifies each unique visit (row).
+#' The combination of `subjid` and `agedays` identifies each unique visit (row).
 #'
 #' Instruments: McCarthy Scales of Children's Abilities (`mac`), Pegboard (`peg`),
 #' Stanford Binet Intelligence (`sbi`).
@@ -16,7 +16,7 @@
 #'| `ctrcd`    | chr | Country code (ISO 3166-1 alpha-3)                      |
 #'| `cohort`   | chr | Cohort name                                            |
 #'| `cohortn`  | chr | Cohort number                                          |
-#'| `id`       | int | Child number                                           |
+#'| `subjid`       | int | Child number                                           |
 #'| `agedays`  | int | Age (days)                                             |
 #'| `sex`      | chr | Either `"male"` or  `"female"`                         |
 #'| `gagebrth` | int | Gestational age (days)                                 |
@@ -64,5 +64,5 @@
 #' Fernald LCH, Weber A, Galasso E, Ratsifandrihamanana L. Socioeconomic gradients
 #' and child development in a very low income population: evidence from Madagascar.
 #' Developmental science. 2011;14:832-847.
-#' \url{https://doi.org/10.1111/j.1467-7687.2010.01032.x}
+#' \doi{10.1111/j.1467-7687.2010.01032.x}
 "gcdg_mdg"

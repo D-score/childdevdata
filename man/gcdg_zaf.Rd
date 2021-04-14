@@ -10,7 +10,7 @@ A \code{data.frame} with 4176 rows and 363 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -381,7 +381,7 @@ A dataset with developmental scores at the item level for
 with up to four visits per child.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Bayley I (\code{by1}), Griffiths (\code{gri}),
 South African adapted Griffith (\code{sgr}), Vineland Social Maturity Scale (\code{vin})
@@ -390,6 +390,6 @@ South African adapted Griffith (\code{sgr}), Vineland Social Maturity Scale (\co
 Richter L, Norris S, Pettifor J, Yach D, Cameron N. Cohort profile:
 Mandela’s children: the 1990 Birth to Twenty study in South Africa.
 International Journal of Epidemiology. 2007;36:504-511.
-\url{https://doi.org/10.1093/ije/dym016}
+\doi{10.1093/ije/dym016}
 }
 \keyword{datasets}

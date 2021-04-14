@@ -10,7 +10,7 @@ A \code{data.frame} with 477 rows and 290 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -307,7 +307,7 @@ A dataset with developmental scores at the item level for
 159 unique children aged 0.75-4.2 years, three waves.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Griffiths Scales (\code{gri})
 }
@@ -315,6 +315,6 @@ Instruments: Griffiths Scales (\code{gri})
 Grantham-McGregor SM, Powell CA, Walker SP, Himes JH. Nutritional
 supplementation, psychosocial stimulation, and mental development of stunted
 children: the Jamaican Study. The Lancet. 1991;338:1-5.
-\url{https://doi.org/10.1016/0140-6736(91)90001-6}
+\doi{10.1016/0140-6736(91)90001-6}
 }
 \keyword{datasets}

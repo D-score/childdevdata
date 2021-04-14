@@ -10,7 +10,7 @@ A \code{data.frame} with 667 rows and 29 variables:\tabular{lll}{
    \code{ctrcd} \tab chr \tab Country code (ISO 3166-1 alpha-3) \cr
    \code{cohort} \tab chr \tab Cohort name \cr
    \code{cohortn} \tab chr \tab Cohort number \cr
-   \code{id} \tab int \tab Child number \cr
+   \code{subjid} \tab int \tab Child number \cr
    \code{agedays} \tab int \tab Age (days) \cr
    \code{sex} \tab chr \tab Either \code{"male"} or  \code{"female"} \cr
    \code{gagebrth} \tab int \tab Gestational age (days) \cr
@@ -46,13 +46,13 @@ A dataset with developmental scores at the item level for
 667 unique children. Cross-sectional.
 }
 \details{
-The combination of \code{id} and \code{agedays} identifies each unique visit (row).
+The combination of \code{subjid} and \code{agedays} identifies each unique visit (row).
 
 Instruments: Barrera Moncada (\code{bar}).
 }
 \references{
 Paxson C, Schady N. Does money matter? The effects of cash transfers on child
 development in rural Ecuador. Economic development and cultural change.
-2010;59:187-229. \url{http://www.jstor.org/stable/10.1086/655458}
+2010;59:187-229.
 }
 \keyword{datasets}
