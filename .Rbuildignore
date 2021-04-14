@@ -6,3 +6,4 @@
 ^README\.Rmd$
 ^references.bib$
 ^docs$
+^cran-comments\.md$
