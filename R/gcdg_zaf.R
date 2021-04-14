@@ -381,5 +381,4 @@
 #' Richter L, Norris S, Pettifor J, Yach D, Cameron N. Cohort profile:
 #' Mandela’s children: the 1990 Birth to Twenty study in South Africa.
 #' International Journal of Epidemiology. 2007;36:504-511.
-#' \doi{10.1093/ije/dym016}
 "gcdg_zaf"
