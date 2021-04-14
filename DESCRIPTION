@@ -20,11 +20,11 @@ Authors@R: c(
     person("Linda", "Richter", email = "linda.richter@wits.ac.za", role = "aut"),
     person("Betsy", "Lozoff", email = "blozoff@umich.edu", role = "aut"))
 Maintainer: Stef van Buuren <stef.vanbuuren@tno.nl>
-Description: The childdevdata package bundles publicly available datasets with 
-    individual milestone data for children aged 0-5 years. Measuring child 
-    development starts by collecting responses to developmental milestones,
-    such as "able to sit" or "says two words". There are many ways to combine 
-    such responses into summaries. This package aims to support the construction, 
+Description: Measuring child development starts by collecting responses to 
+    developmental milestones, such as "able to sit" or "says two words". 
+    There are many ways to combine such responses into summaries. 
+    The package bundles publicly available datasets with individual milestone 
+    data for children aged 0-5 years, with the aim of supporting the construction, 
     evaluation, validation and interpretation of methodologies that aggregate 
     milestone data into informative measures of child development.
 License: CC BY 4.0
@@ -34,7 +34,7 @@ Depends:
     R (>= 2.10)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-URL: https://github.com/d-score/childdevdata, https://d-score.org/childdevdata
+URL: https://github.com/d-score/childdevdata, https://d-score.org/childdevdata/
 Suggests:
     spelling
 Language: en-GB
