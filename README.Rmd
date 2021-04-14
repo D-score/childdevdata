@@ -38,7 +38,7 @@ made on 10,831 unique children during 28,465 visits, covering 21 different instr
 
 <!-- You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with: -->
 
-You can install the development version of `childdevdata` from [GitHub](https://github.com) with:
+You can install the development version of `childdevdata` from [GitHub](https://github.com) with
 
 ``` r
 install.packages("remotes")
