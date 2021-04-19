@@ -91,17 +91,19 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<!-- You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with: -->
-<p>You can install the development version of <code>childdevdata</code> from <a href="https://github.com">GitHub</a> with</p>
+<p>You can install the released version of childdevdata from <a href="https://CRAN.R-project.org">CRAN</a> with</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"childdevdata"</span><span class="op">)</span></code></pre></div>
+<p>You can install the development version of <code>childdevdata</code> from <a href="https://github.com">GitHub</a> with</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span>repo <span class="op">=</span> <span class="st">"d-score/childdevdata"</span><span class="op">)</span></code></pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"d-score/childdevdata"</span><span class="op">)</span></code></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>The following example visualises how the proportion of toddlers that are able to walk increases with age.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/childdevdata">childdevdata</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
 
@@ -120,20 +122,20 @@
 <h2 class="hasAnchor">
 <a href="#overview-of-available-dataset-and-documentation" class="anchor"></a>Overview of available dataset and documentation</h2>
 <p>The package contains multiple datasets. Obtain the list of datasets by</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"childdevdata"</span><span class="op">)</span><span class="op">$</span><span class="va">results</span><span class="op">[</span>, <span class="st">"Item"</span><span class="op">]</span>
 <span class="co">#&gt;  [1] "gcdg_chl_1"       "gcdg_chn"         "gcdg_col_lt42m"   "gcdg_col_lt45m"  </span>
 <span class="co">#&gt;  [5] "gcdg_ecu"         "gcdg_jam_lbw"     "gcdg_jam_stunted" "gcdg_mdg"        </span>
 <span class="co">#&gt;  [9] "gcdg_nld_smocc"   "gcdg_zaf"</span></code></pre></div>
 <p>The documentation of the data can be found by typing into the console:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="op">?</span><span class="va">gcdg_col_lt42m</span></code></pre></div>
 <p>The size of the data is</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">)</span>
 <span class="co">#&gt; [1] 1311  627</span></code></pre></div>
 <p>The first six rows and first nine columns are</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">[</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span>
 <span class="co">#&gt; # A tibble: 6 x 9</span>
 <span class="co">#&gt;   ctrycd cohort       cohortn  subjid agedays sex   gagebrth aqicmc010 aqicmc013</span>
@@ -149,8 +151,8 @@
 <div id="combining-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#combining-data" class="anchor"></a>Combining data</h2>
-<p>Concatenating two or more data is straightforward using <code>dplyr</code>. The following code concatenates all avialable GCDG datasets.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<p>Concatenating two or more data is straightforward using <code>dplyr</code>. The following code concatenates all publicly available GCDG datasets.</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; Attaching package: 'dplyr'</span>
@@ -160,12 +162,13 @@
 <span class="co">#&gt; The following objects are masked from 'package:base':</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-<span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_chl_1</span>, <span class="va">gcdg_chn</span>, <span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span>
+<span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_chl_1</span>, <span class="va">gcdg_chn</span>, <span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, 
+                     <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
 <span class="co">#&gt; [1] 28465  1306</span></code></pre></div>
 <p>Both the number of rows and the number of columns have increased. Milestones not appearing in a particular data obtain all missing (<code>NA</code>) scores.</p>
 <p>The number of records per cohort by sex is</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">cohort</span>, <span class="va">alldata</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span>
 <span class="co">#&gt;                   </span>
 <span class="co">#&gt;                    Female Male</span>
@@ -184,7 +187,7 @@
 <h2 class="hasAnchor">
 <a href="#calculating-d-score-and-daz" class="anchor"></a>Calculating D-score and DAZ</h2>
 <p>The <a href="https://d-score.org/dscore/"><code>dscore</code> package</a> calculates the <em>D-score</em> (<a href="#ref-vanbuuren2014">van Buuren 2014</a>) and the <em>D-score adjusted for age Z-score</em> (DAZ) for all cases:</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/dscore">dscore</a></span><span class="op">)</span>
 <span class="va">alldata</span><span class="op">$</span><span class="va">age</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span>
 <span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://d-score.github.io/dscore/reference/dscore.html">dscore</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
@@ -199,7 +202,7 @@
 <span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
 <span class="co">#&gt; [1] 28465     6</span></code></pre></div>
 <p>We visualise the D-score distribution by age per cohort as</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_cols</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="va">d</span><span class="op">)</span>
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">d</span>, group <span class="op">=</span> <span class="va">cohort</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span> <span class="op">+</span>
@@ -207,7 +210,7 @@
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ylab</a></span><span class="op">(</span><span class="st">"D-score"</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">xlab</a></span><span class="op">(</span><span class="st">"Age (years)"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co">#&gt; Warning: Removed 380 rows containing missing values (geom_point).</span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-7-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-9-1.png" width="100%"></p>
 </div>
 <div id="why-this-package" class="section level2">
 <h2 class="hasAnchor">
@@ -225,31 +228,31 @@
 <li>If you use two or more datasets, cite the publication(s) for each dataset <em>and</em> cite the <code>childdevdata</code> package.</li>
 </ul>
 <p>The citation of the <code>childevdata</code> data package is</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>dataset{stef_van_buuren_2021_4685945,</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  author       <span class="ot">=</span> {Stef van Buuren and</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                  Iris Eekhout and</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                  Marta Rubio Codina and</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>                  Orazio Attanasio and</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                  Costas Meghir and</span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                  Emla Fitzsimons and</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>                  Sally Grantham<span class="sc">-</span>McGregor and</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>                  Maria Caridad Araujo and</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>                  Susan Walker and</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>                  Susan Chang and</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>                  Christine Powell and</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>                  Ann Weber and</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>                  Lia Fernald and</span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>                  Paul Verkerk and</span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>                  Linda Richter and</span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>                  Betsy Lozoff},</span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>  title        <span class="ot">=</span> {D<span class="sc">-</span>score<span class="sc">/</span>childdevdata<span class="sc">:</span> childdevdata <span class="dv">1</span>.<span class="fl">0.0</span>},</span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>  month        <span class="ot">=</span> apr,</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>  year         <span class="ot">=</span> <span class="dv">2021</span>,</span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>  publisher    <span class="ot">=</span> {Zenodo},</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>  version      <span class="ot">=</span> {v1.<span class="fl">0.0</span>},</span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>  doi          <span class="ot">=</span> {<span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.4685945</span>},</span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  url          <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.4685945</span>}</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="sc">@</span>software{stef_van_buuren_2021_4700229,</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  author       <span class="ot">=</span> {Stef van Buuren and</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                  Iris Eekhout and</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                  Marta Rubio Codina and</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                  Orazio Attanasio and</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>                  Costas Meghir and</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>                  Emla Fitzsimons and</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>                  Sally Grantham<span class="sc">-</span>McGregor and</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>                  Maria Caridad Araujo and</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>                  Susan Walker and</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>                  Susan Chang and</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>                  Christine Powell and</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>                  Ann Weber and</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>                  Lia Fernald and</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>                  Paul Verkerk and</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>                  Linda Richter and</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>                  Betsy Lozoff},</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  title        <span class="ot">=</span> {D<span class="sc">-</span>score<span class="sc">/</span>childdevdata<span class="sc">:</span> childdevdata <span class="dv">1</span>.<span class="fl">1.0</span>},</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  month        <span class="ot">=</span> apr,</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>  year         <span class="ot">=</span> <span class="dv">2021</span>,</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>  publisher    <span class="ot">=</span> {Zenodo},</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>  version      <span class="ot">=</span> {v1.<span class="fl">1.0</span>},</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>  doi          <span class="ot">=</span> {<span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.4700229</span>},</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  url          <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.4700229</span>}</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </div>
 <div id="want-to-contribute" class="section level2">
 <h2 class="hasAnchor">
@@ -275,6 +278,8 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=childdevdata">https://​cloud.r-project.org/​package=childdevdata</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/d-score/childdevdata/">https://​github.com/​d-score/​childdevdata/​</a>
 </li>
 </ul>
@@ -318,6 +323,7 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
+<li><a href="https://CRAN.R-project.org/package=childdevdata"><img src="https://www.r-pkg.org/badges/version/childdevdata" alt="CRAN status"></a></li>
 <li><a href="https://zenodo.org/badge/latestdoi/353137452"><img src="https://zenodo.org/badge/353137452.svg" alt="DOI"></a></li>
 </ul>
 </div>
