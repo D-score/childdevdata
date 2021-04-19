@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![CRAN status](https://www.r-pkg.org/badges/version/childdevdata)](https://CRAN.R-project.org/package=childdevdata)
 [![DOI](https://zenodo.org/badge/353137452.svg)](https://zenodo.org/badge/latestdoi/353137452)
 <!-- badges: end -->
 
@@ -36,13 +37,17 @@ made on 10,831 unique children during 28,465 visits, covering 21 different instr
 
 ## Installation
 
-<!-- You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with
+
+```{r eval=FALSE}
+install.packages("childdevdata")
+```
 
 You can install the development version of `childdevdata` from [GitHub](https://github.com) with
 
-``` r
+```{r eval=FALSE}
 install.packages("remotes")
-remotes::install_github(repo = "d-score/childdevdata")
+remotes::install_github("d-score/childdevdata")
 ```
 
 ## Example
@@ -95,11 +100,12 @@ The first seven columns are administrative and background variables. Column numb
 
 ## Combining data
 
-Concatenating two or more data is straightforward using `dplyr`. The following code concatenates all avialable GCDG datasets.
+Concatenating two or more data is straightforward using `dplyr`. The following code concatenates all publicly available GCDG datasets.
 
 ```{r concatenate}
 library(dplyr)
-alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
+alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, 
+                     gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
 dim(alldata)
 ```
 
@@ -152,7 +158,7 @@ We expect that you will properly cite the source data when you use the data in y
 The citation of the `childevdata` data package is
 
 ```
-@dataset{stef_van_buuren_2021_4685945,
+@software{stef_van_buuren_2021_4700229,
   author       = {Stef van Buuren and
                   Iris Eekhout and
                   Marta Rubio Codina and
@@ -169,13 +175,13 @@ The citation of the `childevdata` data package is
                   Paul Verkerk and
                   Linda Richter and
                   Betsy Lozoff},
-  title        = {D-score/childdevdata: childdevdata 1.0.0},
+  title        = {D-score/childdevdata: childdevdata 1.1.0},
   month        = apr,
   year         = 2021,
   publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.4685945},
-  url          = {https://doi.org/10.5281/zenodo.4685945}
+  version      = {v1.1.0},
+  doi          = {10.5281/zenodo.4700229},
+  url          = {https://doi.org/10.5281/zenodo.4700229}
 }
 ```
 

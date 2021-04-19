@@ -7,6 +7,8 @@
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/childdevdata)](https://CRAN.R-project.org/package=childdevdata)
 [![DOI](https://zenodo.org/badge/353137452.svg)](https://zenodo.org/badge/latestdoi/353137452)
 <!-- badges: end -->
 
@@ -24,14 +26,19 @@ visits, covering 21 different instruments.
 
 ## Installation
 
-<!-- You can install the released version of childdevdata from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of childdevdata from
+[CRAN](https://CRAN.R-project.org) with
+
+``` r
+install.packages("childdevdata")
+```
 
 You can install the development version of `childdevdata` from
 [GitHub](https://github.com) with
 
 ``` r
 install.packages("remotes")
-remotes::install_github(repo = "d-score/childdevdata")
+remotes::install_github("d-score/childdevdata")
 ```
 
 ## Example
@@ -101,7 +108,7 @@ Column numbers eight and up hold the milestone scores.
 ## Combining data
 
 Concatenating two or more data is straightforward using `dplyr`. The
-following code concatenates all avialable GCDG datasets.
+following code concatenates all publicly available GCDG datasets.
 
 ``` r
 library(dplyr)
@@ -113,7 +120,8 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
-alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
+alldata <- bind_rows(gcdg_chl_1, gcdg_chn, gcdg_col_lt42m, gcdg_col_lt45m, gcdg_ecu, 
+                     gcdg_jam_lbw, gcdg_jam_stunted, gcdg_mdg, gcdg_nld_smocc, gcdg_zaf)
 dim(alldata)
 #> [1] 28465  1306
 ```
@@ -174,7 +182,7 @@ ggplot(alldata, aes(age, d, group = cohort)) +
 #> Warning: Removed 380 rows containing missing values (geom_point).
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
 
 ## Why this package?
 
@@ -210,7 +218,7 @@ data in your own product or publication, as follows:
 
 The citation of the `childevdata` data package is
 
-    @dataset{stef_van_buuren_2021_4685945,
+    @software{stef_van_buuren_2021_4700229,
       author       = {Stef van Buuren and
                       Iris Eekhout and
                       Marta Rubio Codina and
@@ -227,13 +235,13 @@ The citation of the `childevdata` data package is
                       Paul Verkerk and
                       Linda Richter and
                       Betsy Lozoff},
-      title        = {D-score/childdevdata: childdevdata 1.0.0},
+      title        = {D-score/childdevdata: childdevdata 1.1.0},
       month        = apr,
       year         = 2021,
       publisher    = {Zenodo},
-      version      = {v1.0.0},
-      doi          = {10.5281/zenodo.4685945},
-      url          = {https://doi.org/10.5281/zenodo.4685945}
+      version      = {v1.1.0},
+      doi          = {10.5281/zenodo.4700229},
+      url          = {https://doi.org/10.5281/zenodo.4700229}
     }
 
 ## Want to contribute?
