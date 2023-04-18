@@ -91,15 +91,15 @@ The first six rows and first nine columns are
 
 ``` r
 head(gcdg_col_lt42m[, 1:9])
-#> # A tibble: 6 x 9
-#>   ctrycd cohort       cohortn  subjid agedays sex   gagebrth aqicmc010 aqicmc013
-#>   <chr>  <chr>          <int>   <int>   <int> <chr>    <int>     <int>     <int>
-#> 1 COL    GCDG-COL-LT…      50 5000001     660 Fema…      224        NA        NA
-#> 2 COL    GCDG-COL-LT…      50 5000002    1166 Fema…      280        NA        NA
-#> 3 COL    GCDG-COL-LT…      50 5000003     314 Fema…      273        NA        NA
-#> 4 COL    GCDG-COL-LT…      50 5000004    1239 Fema…      259        NA        NA
-#> 5 COL    GCDG-COL-LT…      50 5000005     679 Fema…      224        NA        NA
-#> 6 COL    GCDG-COL-LT…      50 5000006    1074 Fema…      252        NA        NA
+#> # A tibble: 6 × 9
+#>   ctrycd cohort        cohortn subjid agedays sex   gagebrth aqicmc010 aqicmc013
+#>   <chr>  <chr>           <int>  <int>   <int> <chr>    <int>     <int>     <int>
+#> 1 COL    GCDG-COL-LT4…      50 5.00e6     660 Fema…      224        NA        NA
+#> 2 COL    GCDG-COL-LT4…      50 5.00e6    1166 Fema…      280        NA        NA
+#> 3 COL    GCDG-COL-LT4…      50 5.00e6     314 Fema…      273        NA        NA
+#> 4 COL    GCDG-COL-LT4…      50 5.00e6    1239 Fema…      259        NA        NA
+#> 5 COL    GCDG-COL-LT4…      50 5.00e6     679 Fema…      224        NA        NA
+#> 6 COL    GCDG-COL-LT4…      50 5.00e6    1074 Fema…      252        NA        NA
 ```
 
 The first seven columns are administrative and background variables.
@@ -159,13 +159,13 @@ library(dscore)
 alldata$age <- round(alldata$agedays/365.25, 4)
 d <- dscore(alldata)
 head(d)
-#>       a  n     p    d   sem    daz
-#> 1 1.024 29 0.690 50.4 0.666  0.286
-#> 2 1.509 22 0.955 57.8 1.445  0.269
-#> 3 0.975 29 0.724 50.8 0.682  0.742
-#> 4 1.016 29 0.759 51.3 0.700  0.649
-#> 5 1.016 22 0.682 49.1 0.677 -0.099
-#> 6 1.517 25 0.840 56.9 1.058 -0.070
+#>       a  n     p    d   sem   daz
+#> 1 1.024 29 0.690 51.8 0.852 0.947
+#> 2 1.509 22 0.955 59.5 1.296 0.556
+#> 3 0.975 29 0.724 52.5 0.875 1.484
+#> 4 1.016 29 0.759 53.3 0.875 1.432
+#> 5 1.016 22 0.682 49.7 0.810 0.396
+#> 6 1.517 25 0.840 59.5 1.274 0.516
 dim(d)
 #> [1] 28465     6
 ```
@@ -179,7 +179,7 @@ ggplot(alldata, aes(age, d, group = cohort)) +
   facet_wrap(~ cohort) +
   ylab("D-score") + xlab("Age (years)") +
   theme_bw()
-#> Warning: Removed 380 rows containing missing values (geom_point).
+#> Warning: Removed 380 rows containing missing values (`geom_point()`).
 ```
 
 <img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" />
@@ -194,10 +194,10 @@ child-level response data per milestone and age. However, no such public
 dataset seem to exist. The `childdevdata` package fills that void.
 
 The package grew out of a project in which we collected milestone data
-from 16 cohorts. See [Weber et al.](#ref-weber2019)
-([2019](#ref-weber2019)) and <http://d-score.org/dbook2/> for results.
-Ten cohort owners graciously decided to make their data available for
-third parties. We are grateful to them.
+from 16 cohorts. See Weber et al. ([2019](#ref-weber2019)) and
+<http://d-score.org/dbook2/> for results. Ten cohort owners graciously
+decided to make their data available for third parties. We are grateful
+to them.
 
 ## How to use the data?
 
@@ -211,10 +211,10 @@ made. See the license text for details.
 We expect that you will properly cite the source data when you use the
 data in your own product or publication, as follows:
 
--   If you use one dataset, please cite the publication(s) given in the
-    documentation of that dataset.
--   If you use two or more datasets, cite the publication(s) for each
-    dataset *and* cite the `childdevdata` package.
+- If you use one dataset, please cite the publication(s) given in the
+  documentation of that dataset.
+- If you use two or more datasets, cite the publication(s) for each
+  dataset *and* cite the `childdevdata` package.
 
 The citation of the `childevdata` data package is
 
@@ -250,6 +250,14 @@ Do you have similar data and want to help others to advance the field?
 Please let us know. We hope that the `childdevdata` package may continue
 to grow into a valuable resource for developers and researchers
 worldwide.
+
+## Acknowledgement
+
+This study was supported by the Bill & Melinda Gates Foundation. The
+contents are the sole responsibility of the authors and may not
+necessarily represent the official views of the Bill & Melinda Gates
+Foundation or other agencies that may have supported the primary data
+studies used in the present study.
 
 ## References
 

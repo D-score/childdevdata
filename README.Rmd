@@ -189,5 +189,9 @@ The citation of the `childevdata` data package is
 
 Do you have similar data and want to help others to advance the field? Please let us know. We hope that the `childdevdata` package may continue to grow into a valuable resource for developers and researchers worldwide.
 
+## Acknowledgement
+
+This study was supported by the Bill & Melinda Gates Foundation. The contents are the sole responsibility of the authors and may not necessarily represent the official views of the Bill & Melinda Gates Foundation or other agencies that may have supported the primary data studies used in the present study. 
+
 ## References
 
