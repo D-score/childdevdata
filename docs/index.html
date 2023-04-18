@@ -25,6 +25,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -37,18 +39,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">childdevdata</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -58,7 +54,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/d-score/childdevdata/">
+  <a href="https://github.com/d-score/childdevdata/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -75,153 +71,153 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="childdevdata" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#childdevdata" class="anchor"></a>childdevdata</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="childdevdata">childdevdata<a class="anchor" aria-label="anchor" href="#childdevdata"></a>
+</h1></div>
 <!-- badges: start -->
 
 <p>The goal of <code>childdevdata</code> is to support innovation in child development. The package</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>Makes anonymous microdata available to the research community;</li>
 <li>Adopts a simple naming schema for developmental milestones;</li>
 <li>Supports multiple measurement instruments;</li>
 <li>Eases joint analyses of the data.</li>
 </ol>
 <p>The current version bundles milestone data from ten studies, containing 1,116,061 assessments made on 10,831 unique children during 28,465 visits, covering 21 different instruments.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of childdevdata from <a href="https://CRAN.R-project.org">CRAN</a> with</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the released version of childdevdata from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"childdevdata"</span><span class="op">)</span></code></pre></div>
-<p>You can install the development version of <code>childdevdata</code> from <a href="https://github.com">GitHub</a> with</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"childdevdata"</span><span class="op">)</span></span></code></pre></div>
+<p>You can install the development version of <code>childdevdata</code> from <a href="https://github.com" class="external-link">GitHub</a> with</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"d-score/childdevdata"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"d-score/childdevdata"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="example" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
 <p>The following example visualises how the proportion of toddlers that are able to walk increases with age.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/childdevdata">childdevdata</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
-
-<span class="co"># we use the Dutch SMOCC data</span>
-<span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span><span class="va">gcdg_nld_smocc</span>, 
-             <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span>,
-                        walk <span class="op">=</span> <span class="va">ddigmd068</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html">na.omit</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">walk</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span>, formula <span class="op">=</span> <span class="va">y</span> <span class="op">~</span> <span class="fu">s</span><span class="op">(</span><span class="va">x</span>, bs <span class="op">=</span> <span class="st">"cs"</span><span class="op">)</span>, 
-              se <span class="op">=</span> <span class="cn">FALSE</span>, lwd <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/childdevdata" class="external-link">childdevdata</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># we use the Dutch SMOCC data</span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">with</a></span><span class="op">(</span><span class="va">gcdg_nld_smocc</span>, </span>
+<span>             <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>age <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span>,</span>
+<span>                        walk <span class="op">=</span> <span class="va">ddigmd068</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html" class="external-link">na.omit</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">walk</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html" class="external-link">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"gam"</span>, formula <span class="op">=</span> <span class="va">y</span> <span class="op">~</span> <span class="fu">s</span><span class="op">(</span><span class="va">x</span>, bs <span class="op">=</span> <span class="st">"cs"</span><span class="op">)</span>, </span>
+<span>              se <span class="op">=</span> <span class="cn">FALSE</span>, lwd <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-example-1.png" width="100%"></p>
 </div>
-<div id="overview-of-available-dataset-and-documentation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#overview-of-available-dataset-and-documentation" class="anchor"></a>Overview of available dataset and documentation</h2>
+<div class="section level2">
+<h2 id="overview-of-available-dataset-and-documentation">Overview of available dataset and documentation<a class="anchor" aria-label="anchor" href="#overview-of-available-dataset-and-documentation"></a>
+</h2>
 <p>The package contains multiple datasets. Obtain the list of datasets by</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"childdevdata"</span><span class="op">)</span><span class="op">$</span><span class="va">results</span><span class="op">[</span>, <span class="st">"Item"</span><span class="op">]</span>
-<span class="co">#&gt;  [1] "gcdg_chl_1"       "gcdg_chn"         "gcdg_col_lt42m"   "gcdg_col_lt45m"  </span>
-<span class="co">#&gt;  [5] "gcdg_ecu"         "gcdg_jam_lbw"     "gcdg_jam_stunted" "gcdg_mdg"        </span>
-<span class="co">#&gt;  [9] "gcdg_nld_smocc"   "gcdg_zaf"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span>package <span class="op">=</span> <span class="st">"childdevdata"</span><span class="op">)</span><span class="op">$</span><span class="va">results</span><span class="op">[</span>, <span class="st">"Item"</span><span class="op">]</span></span>
+<span><span class="co">#&gt;  [1] "gcdg_chl_1"       "gcdg_chn"         "gcdg_col_lt42m"   "gcdg_col_lt45m"  </span></span>
+<span><span class="co">#&gt;  [5] "gcdg_ecu"         "gcdg_jam_lbw"     "gcdg_jam_stunted" "gcdg_mdg"        </span></span>
+<span><span class="co">#&gt;  [9] "gcdg_nld_smocc"   "gcdg_zaf"</span></span></code></pre></div>
 <p>The documentation of the data can be found by typing into the console:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="va">gcdg_col_lt42m</span></code></pre></div>
+<code class="sourceCode R"><span><span class="op">?</span><span class="va">gcdg_col_lt42m</span></span></code></pre></div>
 <p>The size of the data is</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">)</span>
-<span class="co">#&gt; [1] 1311  627</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 1311  627</span></span></code></pre></div>
 <p>The first six rows and first nine columns are</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">[</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 6 x 9</span>
-<span class="co">#&gt;   ctrycd cohort       cohortn  subjid agedays sex   gagebrth aqicmc010 aqicmc013</span>
-<span class="co">#&gt;   &lt;chr&gt;  &lt;chr&gt;          &lt;int&gt;   &lt;int&gt;   &lt;int&gt; &lt;chr&gt;    &lt;int&gt;     &lt;int&gt;     &lt;int&gt;</span>
-<span class="co">#&gt; 1 COL    GCDG-COL-LT…      50 5000001     660 Fema…      224        NA        NA</span>
-<span class="co">#&gt; 2 COL    GCDG-COL-LT…      50 5000002    1166 Fema…      280        NA        NA</span>
-<span class="co">#&gt; 3 COL    GCDG-COL-LT…      50 5000003     314 Fema…      273        NA        NA</span>
-<span class="co">#&gt; 4 COL    GCDG-COL-LT…      50 5000004    1239 Fema…      259        NA        NA</span>
-<span class="co">#&gt; 5 COL    GCDG-COL-LT…      50 5000005     679 Fema…      224        NA        NA</span>
-<span class="co">#&gt; 6 COL    GCDG-COL-LT…      50 5000006    1074 Fema…      252        NA        NA</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">gcdg_col_lt42m</span><span class="op">[</span>, <span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 6 × 9</span></span>
+<span><span class="co">#&gt;   ctrycd cohort        cohortn subjid agedays sex   gagebrth aqicmc010 aqicmc013</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;  &lt;chr&gt;           &lt;int&gt;  &lt;int&gt;   &lt;int&gt; &lt;chr&gt;    &lt;int&gt;     &lt;int&gt;     &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 COL    GCDG-COL-LT4…      50 5.00e6     660 Fema…      224        NA        NA</span></span>
+<span><span class="co">#&gt; 2 COL    GCDG-COL-LT4…      50 5.00e6    1166 Fema…      280        NA        NA</span></span>
+<span><span class="co">#&gt; 3 COL    GCDG-COL-LT4…      50 5.00e6     314 Fema…      273        NA        NA</span></span>
+<span><span class="co">#&gt; 4 COL    GCDG-COL-LT4…      50 5.00e6    1239 Fema…      259        NA        NA</span></span>
+<span><span class="co">#&gt; 5 COL    GCDG-COL-LT4…      50 5.00e6     679 Fema…      224        NA        NA</span></span>
+<span><span class="co">#&gt; 6 COL    GCDG-COL-LT4…      50 5.00e6    1074 Fema…      252        NA        NA</span></span></code></pre></div>
 <p>The first seven columns are administrative and background variables. Column numbers eight and up hold the milestone scores.</p>
 </div>
-<div id="combining-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#combining-data" class="anchor"></a>Combining data</h2>
+<div class="section level2">
+<h2 id="combining-data">Combining data<a class="anchor" aria-label="anchor" href="#combining-data"></a>
+</h2>
 <p>Concatenating two or more data is straightforward using <code>dplyr</code>. The following code concatenates all publicly available GCDG datasets.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'dplyr'</span>
-<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     filter, lag</span>
-<span class="co">#&gt; The following objects are masked from 'package:base':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-<span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_chl_1</span>, <span class="va">gcdg_chn</span>, <span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, 
-                     <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
-<span class="co">#&gt; [1] 28465  1306</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Attaching package: 'dplyr'</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     filter, lag</span></span>
+<span><span class="co">#&gt; The following objects are masked from 'package:base':</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;     intersect, setdiff, setequal, union</span></span>
+<span><span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind_rows.html" class="external-link">bind_rows</a></span><span class="op">(</span><span class="va">gcdg_chl_1</span>, <span class="va">gcdg_chn</span>, <span class="va">gcdg_col_lt42m</span>, <span class="va">gcdg_col_lt45m</span>, <span class="va">gcdg_ecu</span>, </span>
+<span>                     <span class="va">gcdg_jam_lbw</span>, <span class="va">gcdg_jam_stunted</span>, <span class="va">gcdg_mdg</span>, <span class="va">gcdg_nld_smocc</span>, <span class="va">gcdg_zaf</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 28465  1306</span></span></code></pre></div>
 <p>Both the number of rows and the number of columns have increased. Milestones not appearing in a particular data obtain all missing (<code>NA</code>) scores.</p>
 <p>The number of records per cohort by sex is</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">cohort</span>, <span class="va">alldata</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span>
-<span class="co">#&gt;                   </span>
-<span class="co">#&gt;                    Female Male</span>
-<span class="co">#&gt;   GCDG-CHL-1          970 1169</span>
-<span class="co">#&gt;   GCDG-CHN            509  481</span>
-<span class="co">#&gt;   GCDG-COL-LT42M      646  665</span>
-<span class="co">#&gt;   GCDG-COL-LT45M      651  684</span>
-<span class="co">#&gt;   GCDG-ECU            337  330</span>
-<span class="co">#&gt;   GCDG-JAM-LBW        242  201</span>
-<span class="co">#&gt;   GCDG-JAM-STUNTED    207  270</span>
-<span class="co">#&gt;   GCDG-MDG            113   92</span>
-<span class="co">#&gt;   GCDG-NLD-SMOCC     8499 8223</span>
-<span class="co">#&gt;   GCDG-ZAF           2154 2018</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">cohort</span>, <span class="va">alldata</span><span class="op">$</span><span class="va">sex</span><span class="op">)</span></span>
+<span><span class="co">#&gt;                   </span></span>
+<span><span class="co">#&gt;                    Female Male</span></span>
+<span><span class="co">#&gt;   GCDG-CHL-1          970 1169</span></span>
+<span><span class="co">#&gt;   GCDG-CHN            509  481</span></span>
+<span><span class="co">#&gt;   GCDG-COL-LT42M      646  665</span></span>
+<span><span class="co">#&gt;   GCDG-COL-LT45M      651  684</span></span>
+<span><span class="co">#&gt;   GCDG-ECU            337  330</span></span>
+<span><span class="co">#&gt;   GCDG-JAM-LBW        242  201</span></span>
+<span><span class="co">#&gt;   GCDG-JAM-STUNTED    207  270</span></span>
+<span><span class="co">#&gt;   GCDG-MDG            113   92</span></span>
+<span><span class="co">#&gt;   GCDG-NLD-SMOCC     8499 8223</span></span>
+<span><span class="co">#&gt;   GCDG-ZAF           2154 2018</span></span></code></pre></div>
 </div>
-<div id="calculating-d-score-and-daz" class="section level2">
-<h2 class="hasAnchor">
-<a href="#calculating-d-score-and-daz" class="anchor"></a>Calculating D-score and DAZ</h2>
-<p>The <a href="https://d-score.org/dscore/"><code>dscore</code> package</a> calculates the <em>D-score</em> (<a href="#ref-vanbuuren2014">van Buuren 2014</a>) and the <em>D-score adjusted for age Z-score</em> (DAZ) for all cases:</p>
+<div class="section level2">
+<h2 id="calculating-d-score-and-daz">Calculating D-score and DAZ<a class="anchor" aria-label="anchor" href="#calculating-d-score-and-daz"></a>
+</h2>
+<p>The <a href="https://d-score.org/dscore/" class="external-link"><code>dscore</code> package</a> calculates the <em>D-score</em> (<a href="#ref-vanbuuren2014">van Buuren 2014</a>) and the <em>D-score adjusted for age Z-score</em> (DAZ) for all cases:</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/dscore">dscore</a></span><span class="op">)</span>
-<span class="va">alldata</span><span class="op">$</span><span class="va">age</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span>
-<span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://d-score.github.io/dscore/reference/dscore.html">dscore</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt;       a  n     p    d   sem    daz</span>
-<span class="co">#&gt; 1 1.024 29 0.690 50.4 0.666  0.286</span>
-<span class="co">#&gt; 2 1.509 22 0.955 57.8 1.445  0.269</span>
-<span class="co">#&gt; 3 0.975 29 0.724 50.8 0.682  0.742</span>
-<span class="co">#&gt; 4 1.016 29 0.759 51.3 0.700  0.649</span>
-<span class="co">#&gt; 5 1.016 22 0.682 49.1 0.677 -0.099</span>
-<span class="co">#&gt; 6 1.517 25 0.840 56.9 1.058 -0.070</span>
-<span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span>
-<span class="co">#&gt; [1] 28465     6</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/d-score/dscore" class="external-link">dscore</a></span><span class="op">)</span></span>
+<span><span class="va">alldata</span><span class="op">$</span><span class="va">age</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">$</span><span class="va">agedays</span><span class="op">/</span><span class="fl">365.25</span>, <span class="fl">4</span><span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://d-score.github.io/dscore/reference/dscore.html" class="external-link">dscore</a></span><span class="op">(</span><span class="va">alldata</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       a  n     p    d   sem   daz</span></span>
+<span><span class="co">#&gt; 1 1.024 29 0.690 51.8 0.852 0.947</span></span>
+<span><span class="co">#&gt; 2 1.509 22 0.955 59.5 1.296 0.556</span></span>
+<span><span class="co">#&gt; 3 0.975 29 0.724 52.5 0.875 1.484</span></span>
+<span><span class="co">#&gt; 4 1.016 29 0.759 53.3 0.875 1.432</span></span>
+<span><span class="co">#&gt; 5 1.016 22 0.682 49.7 0.810 0.396</span></span>
+<span><span class="co">#&gt; 6 1.517 25 0.840 59.5 1.274 0.516</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/dim.html" class="external-link">dim</a></span><span class="op">(</span><span class="va">d</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 28465     6</span></span></code></pre></div>
 <p>We visualise the D-score distribution by age per cohort as</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind.html">bind_cols</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="va">d</span><span class="op">)</span>
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">d</span>, group <span class="op">=</span> <span class="va">cohort</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="op">~</span> <span class="va">cohort</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ylab</a></span><span class="op">(</span><span class="st">"D-score"</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">xlab</a></span><span class="op">(</span><span class="st">"Age (years)"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; Warning: Removed 380 rows containing missing values (geom_point).</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">alldata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind_cols.html" class="external-link">bind_cols</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="va">d</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">alldata</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">age</span>, <span class="va">d</span>, group <span class="op">=</span> <span class="va">cohort</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span>cex <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html" class="external-link">facet_wrap</a></span><span class="op">(</span><span class="op">~</span> <span class="va">cohort</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ylab</a></span><span class="op">(</span><span class="st">"D-score"</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">xlab</a></span><span class="op">(</span><span class="st">"Age (years)"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: Removed 380 rows containing missing values (`geom_point()`).</span></span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-9-1.png" width="100%"></p>
 </div>
-<div id="why-this-package" class="section level2">
-<h2 class="hasAnchor">
-<a href="#why-this-package" class="anchor"></a>Why this package?</h2>
+<div class="section level2">
+<h2 id="why-this-package">Why this package?<a class="anchor" aria-label="anchor" href="#why-this-package"></a>
+</h2>
 <p>We all want our children to grow and prosper. While there is no shortage of apps and instruments to track child development, it is often unclear which data went into the construction of these tools. In order to improve measurement and norm setting of child development, we need child-level response data per milestone and age. However, no such public dataset seem to exist. The <code>childdevdata</code> package fills that void.</p>
-<p>The package grew out of a project in which we collected milestone data from 16 cohorts. See <a href="#ref-weber2019">Weber et al.</a> (<a href="#ref-weber2019">2019</a>) and <a href="http://d-score.org/dbook2/" class="uri">http://d-score.org/dbook2/</a> for results. Ten cohort owners graciously decided to make their data available for third parties. We are grateful to them.</p>
+<p>The package grew out of a project in which we collected milestone data from 16 cohorts. See Weber et al. (<a href="#ref-weber2019">2019</a>) and <a href="http://d-score.org/dbook2/" class="external-link uri">http://d-score.org/dbook2/</a> for results. Ten cohort owners graciously decided to make their data available for third parties. We are grateful to them.</p>
 </div>
-<div id="how-to-use-the-data" class="section level2">
-<h2 class="hasAnchor">
-<a href="#how-to-use-the-data" class="anchor"></a>How to use the data?</h2>
-<p>Tremendous effort has gone into the collection and harmonisation of the data. You can use the data in this package under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Basically, this means that you may share and adapt the data, on the condition that you give appropriate credit and clearly indicate any changes you’ve made. See the license text for details.</p>
+<div class="section level2">
+<h2 id="how-to-use-the-data">How to use the data?<a class="anchor" aria-label="anchor" href="#how-to-use-the-data"></a>
+</h2>
+<p>Tremendous effort has gone into the collection and harmonisation of the data. You can use the data in this package under the <a href="https://creativecommons.org/licenses/by/4.0/" class="external-link">CC BY 4.0</a> license. Basically, this means that you may share and adapt the data, on the condition that you give appropriate credit and clearly indicate any changes you’ve made. See the license text for details.</p>
 <p>We expect that you will properly cite the source data when you use the data in your own product or publication, as follows:</p>
 <ul>
 <li>If you use one dataset, please cite the publication(s) given in the documentation of that dataset.</li>
@@ -254,17 +250,22 @@
 <span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  url          <span class="ot">=</span> {https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.4700229</span>}</span>
 <span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 </div>
-<div id="want-to-contribute" class="section level2">
-<h2 class="hasAnchor">
-<a href="#want-to-contribute" class="anchor"></a>Want to contribute?</h2>
+<div class="section level2">
+<h2 id="want-to-contribute">Want to contribute?<a class="anchor" aria-label="anchor" href="#want-to-contribute"></a>
+</h2>
 <p>Do you have similar data and want to help others to advance the field? Please let us know. We hope that the <code>childdevdata</code> package may continue to grow into a valuable resource for developers and researchers worldwide.</p>
 </div>
-<div id="references" class="section level2">
-<h2 class="hasAnchor">
-<a href="#references" class="anchor"></a>References</h2>
+<div class="section level2">
+<h2 id="acknowledgement">Acknowledgement<a class="anchor" aria-label="anchor" href="#acknowledgement"></a>
+</h2>
+<p>This study was supported by the Bill &amp; Melinda Gates Foundation. The contents are the sole responsibility of the authors and may not necessarily represent the official views of the Bill &amp; Melinda Gates Foundation or other agencies that may have supported the primary data studies used in the present study.</p>
+</div>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-vanbuuren2014" class="csl-entry">
-van Buuren, S. 2014. “Growth Charts of Human Development.” <em>Statistical Methods in Medical Research</em> 23 (4): 346–68. <a href="https://stefvanbuuren.name/publication/van-buuren-2014-gc/" class="uri">https://stefvanbuuren.name/publication/van-buuren-2014-gc/</a>.
+van Buuren, S. 2014. “Growth Charts of Human Development.” <em>Statistical Methods in Medical Research</em> 23 (4): 346–68. <a href="https://stefvanbuuren.name/publication/van-buuren-2014-gc/" class="external-link uri">https://stefvanbuuren.name/publication/van-buuren-2014-gc/</a>.
 </div>
 <div id="ref-weber2019" class="csl-entry">
 Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grantham-McGregor, M. C. Araujo, et al. 2019. “The D-Score: A Metric for Interpreting the Early Development of Infants and Toddlers Across Global Settings.” <em>BMJ Global Health</em> 4: e001724.
@@ -276,29 +277,31 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=childdevdata">https://​cloud.r-project.org/​package=childdevdata</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/d-score/childdevdata/">https://​github.com/​d-score/​childdevdata/​</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=childdevdata" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/d-score/childdevdata/" class="external-link">Browse source code</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a></small></li>
+<li><small><a href="https://creativecommons.org/licenses/by/4.0" class="external-link">CC BY 4.0</a></small></li>
 </ul>
 </div>
+
+
 <div class="citation">
-<h2>Citation</h2>
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing childdevdata</a></li>
+<li><a href="authors.html#citation">Citing childdevdata</a></li>
 </ul>
 </div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Stef van Buuren <br><small class="roles"> Maintainer, author </small>  </li>
 <li>Iris Eekhout <br><small class="roles"> Author </small>  </li>
@@ -319,24 +322,27 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
-<li><a href="https://CRAN.R-project.org/package=childdevdata"><img src="https://www.r-pkg.org/badges/version/childdevdata" alt="CRAN status"></a></li>
-<li><a href="https://zenodo.org/badge/latestdoi/353137452"><img src="https://zenodo.org/badge/353137452.svg" alt="DOI"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
+<li><a href="https://CRAN.R-project.org/package=childdevdata" class="external-link"><img src="https://www.r-pkg.org/badges/version/childdevdata" alt="CRAN status"></a></li>
+<li><a href="https://zenodo.org/badge/latestdoi/353137452" class="external-link"><img src="https://zenodo.org/badge/353137452.svg" alt="DOI"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Stef van Buuren, Iris Eekhout, Marta Rubio Codina, Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor, Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell, Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter, Betsy Lozoff.</p>
+  <p></p>
+<p>Developed by Stef van Buuren, Iris Eekhout, Marta Rubio Codina, Orazio Attanasio, Costas Meghir, Emla Fitzsimons, Sally Grantham-McGregor, Maria Caridad Araujo, Susan Walker, Susan Chang, Christine Powell, Ann Weber, Lia Fernald, Paul Verkerk, Linda Richter, Betsy Lozoff.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -344,6 +350,8 @@ Weber, A. M., M. Rubio-Codina, S. P. Walker, S. van Buuren, I. Eekhout, S. Grant
 
   
 
+
+  
 
   </body>
 </html>
